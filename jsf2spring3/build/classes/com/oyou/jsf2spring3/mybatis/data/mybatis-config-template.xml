@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<properties resource="resources/jdbc-config.properties">
+		<property name="somename" value="somevalue" />
+	</properties>
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+		<setting name="lazyLoadingEnabled" value="true" />
+		<setting name="multipleResultSetsEnabled" value="true" />
+		<setting name="useColumnLabel" value="true" />
+		<setting name="useGeneratedKeys" value="false" />
+		<setting name="autoMappingBehavior" value="PARTIAL" />
+		<setting name="defaultExecutorType" value="SIMPLE" />
+		<setting name="defaultStatementTimeout" value="25000" />
+		<setting name="safeRowBoundsEnabled" value="false" />
+		<setting name="mapUnderscoreToCamelCase" value="false" />
+		<setting name="localCacheScope" value="SESSION" />
+		<setting name="jdbcTypeForNull" value="OTHER" />
+		<setting name="lazyLoadTriggerMethods" value="equals,clone,hashCode,toString" />
+	</settings>
+	<typeAliases>
+		<typeAlias alias="Employee" type="com.oyou.jsf2spring3.entity.Employee" />
+		<package name="com.oyou.jsf2spring3.entity" />
+	</typeAliases>
+	<typeHandlers>
+		<typeHandler handler="someHandler" />
+	</typeHandlers>
+	<objectFactory type="SomeObjectFactory">
+		<property name="someProperty" value="100" />
+	</objectFactory>
+	<plugins>
+		<plugin interceptor="org.mybatis.example.ExamplePlugin">
+			<property name="someProperty" value="100" />
+		</plugin>
+	</plugins>
+	<environments default="development">
+		<environment id="development">
+			<!-- transactionManager type="JDBC" /-->
+			<transactionManager type="MANAGED">
+				<property name="closeConnection" value="false" />
+			</transactionManager>
+			<dataSource type="POOLED">
+				<property name="driver" value="${dev.driver}" />
+				<property name="url" value="${dev.url}" />
+				<property name="username" value="${dev.user}" />
+				<property name="password" value="${dev.password}" />
+			</dataSource>
+		</environment>
+	</environments>
+	<databaseIdProvider type="VENDOR">
+		<property name="SQL Server" value="sqlserver" />
+		<property name="DB2" value="db2" />
+		<property name="Oracle" value="oracle" />
+	</databaseIdProvider>
+	<mappers>
+		<mapper resource="com/oyou/jsf2spring3/mybatis/data/EmployeeMapper.xml" />
+		<mapper url="file:///var/mappers/AuthorMapper.xml" />
+		<mapper class="org.mybatis.builder.AuthorMapper" />
+	</mappers>
+</configuration>
