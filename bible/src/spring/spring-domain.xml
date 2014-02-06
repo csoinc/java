@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="transactionTemplate" abstract="true" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager"><ref bean="transactionManager"/></property>
+		<property name="transactionAttributes">
+			<props>
+				<prop key="load*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="login*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="create*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="insert*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="increase*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="update*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="save*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="delete*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="register*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="change*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="remove*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="execute*">PROPAGATION_REQUIRED, -Exception</prop>
+				<prop key="*">PROPAGATION_REQUIRED, readOnly</prop>
+			</props>
+		</property>
+		<property name="preInterceptors">
+			<list>	
+				<ref bean="theTracingBeforeAdvisor"/>			
+			</list>
+		</property>
+		<property name="postInterceptors">
+			<list>
+				<ref bean="theTracingAfterAdvisor"/>		
+				<ref bean="theTracingExceptionsAdvisor"/>
+			</list>
+		</property>		
+	</bean>
+	
+	<bean id="bibleServiceTarget" class="com.oyou.domain.bible.BibleServiceImpl">
+		<property name="bibleDAO">
+			<ref bean="bibleDAO"/>
+		</property>
+	</bean>
+	<bean id="bibleService" parent="transactionTemplate">
+		<property name="target"><ref bean="bibleServiceTarget"/></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.blog.orm" default-access="field">
+	<class name="BlogGroup" table="blog_group">
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="native" /-->
+		</id>
+		<property name="groupName" column="group_name" />
+		<property name="description" column="description" />
+		<property name="createTime" column="create_time" />
+		<property name="updateTime" column="update_time" />
+		<property name="status" />
+
+		<many-to-one name="blogSecurityType" column="security_type_id" lazy="false" class="BlogSecurityType" />
+		<many-to-one name="blogLanguageType" column="language_type_id" lazy="false" class="BlogLanguageType" />
+		<many-to-one name="blogGroupType" column="group_type_id" lazy="false" class="BlogGroupType" />
+		
+		<bag name="blogUsers" table="blog_user_group" cascade="none" fetch="select" lazy="true">
+			<key column="group_id"/>
+			<many-to-many column="user_id" class="com.oyou.domain.blog.orm.BlogUser"/> 
+		</bag>
+
+		<set name="blogMessages" inverse="true" lazy="false">
+            <key column="group_id"/>
+            <one-to-many class="BlogMessage"/>
+        </set>
+		
+	</class>
+
+</hibernate-mapping>

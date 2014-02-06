@@ -1,0 +1,407 @@
+BODY {
+    background-color      : #FFFFFF;
+	color		  		  : #000000;
+	margin-left           : 0;
+	margin-right          : 0;
+	margin-top            : 0;
+}
+
+.barmenu {
+	color            : #111111;
+	font-family      : arial;
+	font-size        : 10px;
+    font-weight      : lighter;
+}
+
+A.barmenu {
+	color : #111111; 
+	text-decoration : none;
+	font-family : arial; 
+	font-size: 10px; 
+	font-weight: lighter;  
+}
+A.barmenu:Visited {color : #111111; text-decoration : none; font-size : 10px; }
+A.barmenu:Active  {color : #111111; text-decoration : none; font-size : 10px; }
+A.barmenu:Hover   {color : #339966; text-decoration : none; font-size : 10px; }
+
+A         {color : #111111; text-decoration : none; font-size : 14;}
+A:Visited {color : #111111; text-decoration : none; font-size : 14;}
+A:Active  {color : #111111; text-decoration : none; font-size : 14;}
+A:Hover   {color : #339966; text-decoration : none; font-size : 14;}
+
+.infonews {
+    color : #555555;
+	background-color: #E7E8F1;
+    font-family : arial;
+    font-size : 10px;
+    font-weight : bold;
+}
+
+A.infonews         {color : #6489A0; text-decoration : none;}
+A.infonews:Visited {color : #6489A0; text-decoration : none;}
+A.infonews:Active  {color : #6489A0; text-decoration : none;}
+A.infonews:Hover   {color : #CC0000; text-decoration : none; }
+
+P.topics { 
+	color : #339966; 
+  	background-color : #FFFFFF; 
+    font-weight : bold;
+}
+
+H1.title {
+  	color : #FFEC00;
+}
+
+.MENU {
+	background-color: #E7E8F1;
+}
+
+P.FORM {
+	color : #6489A0;
+	font-family : verdana;
+	font-size : 16px;
+	text-align: center;
+}
+
+/***********************************************
+ * color of the thin line surrounding the form *
+ **********************************************/
+TABLE.FORM {		
+	background-color : #339966;
+}
+
+/**************************************
+ * background color of the form title *
+ *************************************/
+TH.FORM {
+	color : #FFFFFF;
+	background-color : #339966;
+	font-weight : bold;
+	font-family : verdana;
+}
+
+/********************************
+ * background color of the form *
+ *******************************/
+TD.FORM {
+	background-color : #FFFFFF;	
+}
+
+/*******************************
+ *  background color to use to *
+ *  display the errors         *
+ ******************************/
+TD.ERROR {
+	background-color : #CC0000;
+}
+
+TH.FORM TR TD {
+	color : #FFFFFF;
+	background-color : #339966;
+	font-weight : bold;
+	font-family : verdana;
+}
+
+.ARRAY {
+	font-family : verdana;
+	font-size : 14;
+ 	color : #000000;	
+	background-color : #FFFFFF;
+}
+
+.ARRAY1 {
+	font-family : verdana;
+	font-size : 14;
+ 	color : #000000;	
+	background-color : #ddddff;
+}
+
+/******************************
+ *    class used to display   *
+ *    the input field labels  *
+ *****************************/
+
+.LABEL {
+	font-family : verdana;
+	font-size : 12;
+ 	color : #339966;	
+}
+
+SPAN.LABEL {
+}
+
+TH.LABEL {
+	text-align:right;
+}
+
+.LABELLEFT {
+	font-family : verdana;
+	font-size : 12;
+ 	color : #339966;	
+}
+
+SPAN.LABELLEFT {
+}
+
+TH.LABELLEFT {
+	text-align:left;
+}
+
+.COMMENT {
+	color : #339966; 
+	font-style : bold; 
+	font-family: verdana;
+	text-align : center;
+}
+
+.TOPLINK {
+	font-style : verdana;
+	text-align : left;
+}
+
+/*******************************************
+ * class for the title of the subscription *
+ ******************************************/
+P.SUBSCRIPTION {
+	color : #339966;
+	font-family: arial;
+	font-weight : bold;
+	text-align : center;
+	font-size : 16px;
+}
+
+/********************************************************
+ * color of the thin line surrounding the subscriptions *
+ *******************************************************/
+TABLE.SUBSCRIPTION {
+	background-color : #339966;
+}
+
+/*************************
+ * class for the headers *
+ ************************/
+TH.SUBSCRIPTION {
+	color : #FFFFFF;
+	background-color : #339966;
+	font-weight: bold;			
+}
+
+/*******************************
+ * class for the subscriptions *
+ ******************************/
+TD.SUBSCRIPTION {
+	color      : #339966;
+	background-color : #FFFFFF;
+}
+
+.ongletMain {
+	BORDER-RIGHT: #339966 1px solid; 
+	BORDER-TOP: medium none; 
+	BORDER-LEFT: #339966 1px solid; 
+	BORDER-BOTTOM: #339966 1px solid; 
+	BACKGROUND-COLOR: #FFFFFF;/*dce8f4*/
+}
+
+.clsAction {
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	COLOR: #053c6d; 
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.ongletTextEna {
+	BORDER-RIGHT: #339966 1px solid; 
+	BORDER-TOP: #339966 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #339966 1px solid; 
+	COLOR: #FFFFFF; /*#005386; */
+	BORDER-BOTTOM: medium none; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: #339966; 
+	TEXT-ALIGN: center;
+}
+
+.ongletTextDis {
+	BORDER-RIGHT: #339966 1px solid; 
+	BORDER-TOP: #339966 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #339966 1px solid; 
+	COLOR: #339966; 
+	BORDER-BOTTOM: #339966 1px solid; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: #FFFFFF; 
+	TEXT-ALIGN: center;
+}
+
+.ongletTextErr {
+	BORDER-RIGHT: #c5c5c5 1px solid; 
+	BORDER-TOP: #c5c5c5 1px solid; 
+	FONT-WEIGHT: bold; 
+	FONT-SIZE: 10px; 
+	BORDER-LEFT: #c5c5c5 1px solid; 
+	COLOR: #FFFFFF; 
+	BORDER-BOTTOM: #80add6 2px solid; 
+	FONT-FAMILY: verdana; 
+	BACKGROUND-COLOR: #ED4F50;
+	TEXT-ALIGN: center;
+}
+
+.ongletMiddle {
+	BORDER-RIGHT: #339966 1px solid; 
+	BORDER-TOP: medium none; 
+	FONT-SIZE: 1px; 
+	BORDER-LEFT: #339966 1px solid; 
+	BORDER-BOTTOM: medium none; 
+	BACKGROUND-COLOR: #FFFFFF;
+}
+
+.ongletSpace {
+	BORDER-BOTTOM: #339966 1px solid;
+}
+
+/**
+ * Calendar classes
+ */
+TD.CALENDRIER {
+	color: #339966;
+	background-color: #C2C2C2; 
+	font-weight: bold; 
+	text-align: center; 
+	font-size: 10px;
+}
+
+A.CALENDRIER {
+	text-decoration: none; 
+	font-size: 10px;	
+	color: #339966; //#000000;
+}
+
+.CALENDARBORDER {
+	background-color: #339966; //#000000; 
+}
+
+.CALENDARTITLE {
+	background-color: #339966; //#C9252C;
+}
+
+.CALENDARWEEK {
+	background-color: #FFFFFF;
+}
+
+.CALENDARWEEKEND {
+	background-color: #FFF4E5;
+}
+
+.CALENDARSELECTED {
+	background-color: #FF8F01;
+}
+
+/************************************
+ *         Datagrid styles          *
+ ************************************/
+TABLE.DATAGRID {
+	background-color : #339966;
+}
+
+TH.DATAGRID {	
+	color : #FFFFFF;
+	background-color : #339966;
+	font-weight: bold;
+	font-family : verdana;
+}
+
+TABLE.DATAGRID TR TD {	
+	font-family : verdana;
+	padding: 2px;
+}
+
+TR.DATAGRID {		
+	background-color : #FFFFFF;	
+}
+
+TR.DATAGRID2 {		
+	background-color : #AAAAAA;	
+}
+
+.DATAGRID_SEL {
+	background-color : #339966;	
+}
+
+.DATAGRID_DEL {
+	text-decoration: line-through;
+}
+
+TR.DATAGRID_DEL TD INPUT {
+	text-decoration: line-through;
+}
+
+TABLE.DATAGRID TR TD INPUT {		
+	width: 100%;
+}
+
+/************************************
+ *         Suggest styles          *
+ ************************************/
+div.suggestionList {
+	z-index:500;
+	position:absolute;
+	width:150px; 
+	border:1px solid #333333; 
+	background-color:#ffffff; 
+	font-family:Verdana; 
+	font-size:12; 
+	cursor:default; 
+	visibility:hidden;
+}
+div.suggestionList_element_off {
+	width: 148px;
+	background: #ffffff;
+	color: #333333;
+	padding-left: 2px;
+}
+div.suggestionList_element_on {
+	width: 148px;
+	background: #6D99C6;
+	color: #ffffff;
+	padding-left: 2px;
+}
+
+/**SQL return result**/
+table.sql {
+	border: 1px;
+	background-color: #f7f7f7;
+	}
+	
+thead.th.sql {
+	text-align: center;
+	font-size: 12px; 
+	background-color: oldlace;
+	color: steelblue;
+	}	
+	
+tbody.td.sql	{
+	color: #000;
+	font-size: 11px;
+	text-align: center;
+	border-bottom: solid 1px #d8d8d8;
+	border-left: solid 1px #d8d8d8;
+	}
+	
+tfoot.td.sql	{
+	text-align: center;
+	font-size: 12px;
+	background-color: papayawhip;
+	color: steelblue;
+	border-top: solid 1px slategray;
+	}
+	
+hr {
+  	border: 0;
+  	width: 98%;
+  	color: #339966;
+	background-color: #339966;
+	height: 1px;
+}
+

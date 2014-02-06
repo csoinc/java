@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="gwt-blogger" basedir="." default="main">
+	
+	<property name="src.dir" value="src"/>
+	
+	<property name="classes.dir" value="bin"/>
+	<property name="jar.filename" value="${ant.project.name}.jar"/>
+	
+	<property name="www.dir" value="www"/>
+	<property name="www.blog.dir" value="${www.dir}/com.oyou.gwt.blog.Blog"/>
+
+	<property name="web.blog.webcontent" value="C:/home/html/ouoy.blogsite.org/scripts"/>
+	<property name="web.mcbc.webcontent" value="C:/home/html/mcbc.blogsite.org/scripts"/>
+	
+	<property name="lib.dir" value="C:/Workspaces/Applications/development/Eclipse/common/libJava"/>
+
+	<property name="gwt.blog.dir" value="${web.blog.webcontent}/com.oyou.gwt.blog.Blog"/>
+	<property name="gwt.mcbc.dir" value="${web.mcbc.webcontent}/com.oyou.gwt.blog.Blog"/>
+	
+	<target name="clean" description="Clean target">
+		<echo>Clean all the java class files......</echo>
+		<delete includeemptydirs="true">
+		    <fileset dir="${classes.dir}" includes="**/*"/>
+		</delete>
+	</target>
+
+	<target name="clean.javascript" description="Clean target">
+		<echo>Clean all the www javascript files......</echo>
+		<delete includeemptydirs="true">
+		    <fileset dir="${gwt.blog.dir}" includes="**/*"/>
+		    <fileset dir="${gwt.mcbc.dir}" includes="**/*"/>
+		</delete>
+	</target>
+	
+	<target name="compile" depends="clean" description="Compilation target">
+		<echo>Compile all the java source files.</echo>
+		<mkdir dir="${classes.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${classes.dir}" />
+	</target>
+
+	<target name="jar" description="Jar target">
+		<echo>Jar all the java class files.</echo>
+		<jar jarfile="${lib.dir}/${jar.filename}" >
+			<fileset dir="${classes.dir}" includes="META-INF/**/*" excludes="*.jar" />
+			<fileset dir="${classes.dir}" includes="com/oyou/gwt/banner/**/*" excludes="*.jar" />
+			<fileset dir="${classes.dir}" includes="com/oyou/gwt/popup/**/*" excludes="*.jar" />
+			<fileset dir="${classes.dir}" includes="com/oyou/gwt/album/**/*" excludes="*.jar" />
+			<fileset dir="${classes.dir}" includes="com/oyou/gwt/blog/**/*" excludes="*.jar" />
+			<fileset dir="${classes.dir}" includes="com/oyou/gwt/console/**/*" excludes="*.jar" />
+		</jar>	
+	</target>
+
+	<target name="copy" description="Copy target">
+		<echo>Copy jar files.</echo>
+		<copy file="${lib.dir}/${jar.filename}" todir="${lib.dir}/"/>
+	</target>
+
+	<target name="copy.js" depends="clean.javascript" description="Copy target">
+		<echo>Copy javascript files.</echo>
+		<copy todir="${gwt.blog.dir}">
+		    <fileset dir="${www.blog.dir}" includes="**/*" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${gwt.mcbc.dir}">
+		    <fileset dir="${www.blog.dir}" includes="**/*" excludes="**/CVS"/>
+		</copy>
+	</target>
+	
+	<target name="main" depends="jar, copy" description="Main target">
+		<echo>${ant.project.name} build, deploy done.</echo>
+	</target>
+
+</project>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.blog.orm" default-access="field">
+	<class name="BlogUser" table="blog_user">
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="native" /-->
+		</id>
+		<property name="loginName" column="login_name" />
+		<property name="loginPassword" column="login_password" />
+		<property name="email" />
+		<property name="firstname" column="firstname" />
+		<property name="lastname" column="lastname" />
+		<property name="nickname" column="nickname" />
+		<property name="phoneHome" column="phone_home" />
+		<property name="phoneCell" column="phone_cell" />
+		<property name="unit" />
+		<property name="street" />
+		<property name="city" />
+		<property name="province" />
+		<property name="country" />
+		<property name="createTime" column="create_time" />
+		<property name="updateTime" column="update_time" />
+		<property name="accessTime" column="access_time" />
+		<property name="status" />
+		<one-to-one name="blogUserStatistic" class="BlogUserStatistic" property-ref="statisticId" />
+		<many-to-one name="blogUserType" column="user_type_id" lazy="false" class="BlogUserType" />
+		
+		<bag name="blogGroups" table="blog_user_group" cascade="none" fetch="select" lazy="true">
+			<key column="user_id"/>
+			<many-to-many column="group_id" class="BlogGroup"/> 
+		</bag>
+		
+	</class>
+
+</hibernate-mapping>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="oyo-blog-1.0" basedir="../" default="main">
+	
+	<property name="classes.blog.domain.dir" value="blogDomainJava/bin"/>
+	<property name="classes.blog.web.dir" value="blogWebJava/bin"/>
+	<property name="classes.blog.dir" value="blogweb/build/classes"/>
+
+	<property name="jar.filename" value="${ant.project.name}.jar"/>
+	
+	<property name="web.blog.webcontent" value="blogweb/WebContent"/>
+	<property name="web.ajax.webcontent" value="/ECLIPSE/ajax/ajaxweb/WebContent"/>
+	<property name="web.biz.webcontent" value="ECLIPSE/biz/bizweb/WebContent"/>
+	<property name="web.research.webcontent" value="/ECLIPSE/research/researchweb/WebContent"/>
+	<property name="ear.biz.dir" value="C:/Documents and Settings/oyou/Desktop/Projects/ECLIPSE/biz/bizEar"/>
+	
+	<property name="lib.dir" value="WEB-INF/lib"/>
+
+	<property name="prod.dir.c" value="C:/Documents and Settings/oyou/Desktop/Projects/ECLIPSE"/>
+	<property name="prod.dir.s" value="S:/Program Files/Apache Software Foundation/Tomcat 5.5/webapps"/>
+	<property name="prod.dir.w" value="W:/Program Files/Apache Software Foundation/Tomcat 5.5/webapps"/>
+
+	<!--property name="prod.dir" value="${prod.dir.c}"/-->
+	<property name="prod.dir" value="${prod.dir.c}"/>
+	<!--property name="prod.dir" value="${prod.dir.w}"/-->
+	
+	<property name="prod.blogweb.dir" value="${prod.dir}/blogweb"/>
+	<property name="prod.mcbcweb.dir" value="${prod.dir}/mcbcweb"/>
+	<property name="prod.cmccweb.dir" value="${prod.dir}/cmccweb"/>
+	<property name="prod.classes.dir" value="WEB-INF/classes"/>
+
+	<target name="copy.jsp" description="Copy.jsp target">
+		<echo>Copy jsp files.</echo>
+		<copy todir="${web.mcbc.webcontent}/jsps">
+		    <fileset dir="${web.blog.webcontent}/jsps" includes="**/*" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${web.mcbc.webcontent}/tiles">
+		    <fileset dir="${web.blog.webcontent}/tiles" includes="**/*" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${web.cmcc.webcontent}/jsps">
+		    <fileset dir="${web.blog.webcontent}/jsps" includes="**/*" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${web.cmcc.webcontent}/tiles">
+		    <fileset dir="${web.blog.webcontent}/tiles" includes="**/*" excludes="**/CVS"/>
+		</copy>
+	</target>
+
+	<target name="jar" description="Jar target">
+		<echo>Jar all the blog java class files.</echo>
+		<jar jarfile="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" >
+			<fileset dir="${classes.blog.domain.dir}" includes="**/*" excludes="**/CVS" />
+			<fileset dir="${classes.blog.web.dir}" includes="**/*" excludes="**/CVS" />
+		</jar>	
+	</target>
+
+	<target name="copy.jar" depends="jar" description="Copy.jar target">
+		<echo>Copy jar file.</echo>
+		<copy file="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" todir="${prod.mcbcweb.dir}/${lib.dir}/"/>
+		<copy file="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" todir="${prod.cmccweb.dir}/${lib.dir}/"/>
+		<copy file="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" todir="${web.ajax.webcontent}/${lib.dir}/"/>
+		<copy file="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" todir="${web.biz.webcontent}/${lib.dir}/"/>
+		<copy file="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" todir="${web.research.webcontent}/${lib.dir}/"/>
+		<copy file="${prod.blogweb.dir}/${lib.dir}/${jar.filename}" todir="${ear.biz.dir}/"/>
+	</target>
+
+	<target name="deploy.classes" depends="copy.jar" description="Deploy.classes target">
+		<echo>Deploy class files.</echo>
+		<copy todir="${prod.blogweb.dir}/${prod.classes.dir}">
+		    <fileset dir="${classes.blog.dir}" includes="**/*" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${prod.mcbcweb.dir}/${prod.classes.dir}">
+		    <fileset dir="${classes.mcbc.dir}" includes="**/*" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${prod.cmccweb.dir}/${prod.classes.dir}">
+		    <fileset dir="${classes.cmcc.dir}" includes="**/*" excludes="**/CVS"/>
+		</copy>
+	</target>
+
+	<target name="deploy.lib" description="Deploy.lib target">
+		<echo>Deploy lib jar files.</echo>
+		<copy todir="${prod.blogweb.dir}/${lib.dir}">
+		    <fileset dir="${web.blog.webcontent}/${lib.dir}" includes="**/*.jar" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${prod.mcbcweb.dir}/${lib.dir}">
+		    <fileset dir="${web.mcbc.webcontent}/${lib.dir}" includes="**/*.jar" excludes="**/CVS"/>
+		</copy>
+		<copy todir="${prod.cmccweb.dir}/${lib.dir}">
+		    <fileset dir="${web.cmcc.webcontent}/${lib.dir}" includes="**/*.jar" excludes="**/CVS"/>
+		</copy>
+	</target>
+	
+	<target name="deploy.jsp" depends="deploy.classes,deploy.lib" description="Deploy.jsp target">
+		<echo>Deploy jsp files etc.</echo>
+		<copy todir="${prod.blogweb.dir}">
+		    <fileset dir="${web.blog.webcontent}" excludes="**/CVS">
+		    	<include name="jsps/**/*"/>
+		    	<include name="tiles/**/*"/>
+		    	<include name="template/**/*"/>
+		    	<include name="gwt/org.oyosoft.gwt.blog.Blog/**/*"/>
+		    	<include name="BIBLE-INF/**/*"/>
+		    	<include name="configs/**/*"/>
+		    	<include name="images/**/*"/>
+		    	<include name="theme/**/*"/>
+		    	<include name="sql/**/*"/>
+		    	<include name="WEB-INF/*.xml"/>
+		    	<include name="WEB-INF/*.tld"/>
+		    </fileset>	
+		</copy>
+
+		<copy todir="${prod.mcbcweb.dir}">
+		    <fileset dir="${web.mcbc.webcontent}" excludes="**/CVS">
+		    	<include name="jsps/**/*"/>
+		    	<include name="tiles/**/*"/>
+		    	<include name="template/**/*"/>
+		    	<include name="gwt/org.oyosoft.gwt.blog.Blog/**/*"/>
+		    	<include name="BIBLE-INF/**/*"/>
+		    	<include name="configs/**/*"/>
+		    	<include name="images/**/*"/>
+		    	<include name="theme/**/*"/>
+		    	<include name="sql/**/*"/>
+		    	<include name="WEB-INF/*.xml"/>
+		    	<include name="WEB-INF/*.tld"/>
+		    </fileset>	
+		</copy>
+		
+		<copy todir="${prod.cmccweb.dir}">
+		    <fileset dir="${web.cmcc.webcontent}" excludes="**/CVS">
+		    	<include name="jsps/**/*"/>
+		    	<include name="tiles/**/*"/>
+		    	<include name="template/**/*"/>
+		    	<include name="gwt/org.oyosoft.gwt.blog.Blog/**/*"/>
+		    	<include name="BIBLE-INF/**/*"/>
+		    	<include name="configs/**/*"/>
+		    	<include name="images/**/*"/>
+		    	<include name="theme/**/*"/>
+		    	<include name="sql/**/*"/>
+		    	<include name="WEB-INF/*.xml"/>
+		    	<include name="WEB-INF/*.tld"/>
+		    </fileset>	
+		</copy>
+	</target>
+	
+	<target name="deploy" depends="deploy.jsp" description="Deploy target">
+		<echo>${ant.project.name} build, deploy done.</echo>
+	</target>
+
+	<target name="main" depends="copy.jsp" description="Main target">
+		<echo>${ant.project.name} build, deploy done.</echo>
+	</target>
+	
+</project>

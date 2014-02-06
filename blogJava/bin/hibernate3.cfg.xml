@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+	<!-- database -->
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://oyosoft.for-the.biz:3306/biz</property>
+    <property name="hibernate.connection.username">biz</property>
+    <property name="hibernate.connection.password">oy920918</property>
+    <property name="hibernate.connection.hostproc">100</property>
+    <property name="hibernate.connection.pool_size">10</property>
+    <property name="hibernate.default_schema">biz</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+
+	<!-- pooling -->
+	<property name="hibernate.c3p0.min_size">1</property>
+	<property name="hibernate.c3p0.max_size">1</property>
+	<property name="hibernate.c3p0.timeout">5000</property>
+	<property name="hibernate.c3p0.max_statements">50</property>
+
+	<!-- logging -->
+   	<property name="hibernate.show_sql">true</property>
+    <property name="hibernate.format_sql">false</property>
+  	<property name="hibernate.generate_statistics">false</property>
+
+	<!-- fetching -->
+	<property name="hibernate.max_fetch_depth">3</property>
+
+	<!-- batching -->
+	<property name="hibernate.jdbc.batch_size">25</property>
+	
+	<!-- caching -->	        
+	<property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+	<!--property name="hibernate.cache.use_minimal_puts">false</property-->	
+	<!--property name="hibernate.cache.use_query_cache">false</property-->
+	<property name="hibernate.cache.use_second_level_cache">true</property>
+	
+	<!-- mapping -->	
+	<mapping resource="com/oyou/domain/blog/orm/BibleBook.hbm.xml"/> 
+	<mapping resource="com/oyou/domain/blog/orm/BibleLine.hbm.xml"/> 
+	
+  </session-factory>
+</hibernate-configuration>

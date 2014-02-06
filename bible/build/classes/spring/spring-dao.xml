@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	
+	<bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	  <property name="locations">
+		<list>				
+			<value>classpath:jdbc-config.properties</value>
+		</list>
+	  </property>
+    </bean>
+
+	<!--  
+	<bean id="prodMBDataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+	  <property name="jndiName"><value>jdbc/prodMB</value></property>
+	</bean>
+	-->
+
+	<bean id="prodDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+		<property name="driverClassName"><value>${prod.jdbcDriver}</value></property>
+		<property name="url"><value>${prod.jdbcUrl}</value></property>
+		<property name="username"><value>${prod.userId}</value></property>
+		<property name="password"><value>${prod.password}</value></property>
+	</bean>
+	
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="prodDataSource" />
+		</property>
+
+		<!-- 
+		<property name="mappingDirectoryLocations">
+			<list>
+				<value>classpath:com/oyou/domain/bible/orm</value>
+			</list>
+		</property>
+		-->
+		<property name="mappingLocations">
+			<list>
+				<value>classpath:com/oyou/domain/bible/orm/**/*.xml</value>
+			</list>
+		</property>
+		   
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.max_fetch_depth">3</prop>
+				<prop key="hibernate.jdbc.batch_size">25</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>
+				<prop key="hibernate.cache.use_second_level_cache">true</prop>
+			</props>
+		</property>
+		  
+	</bean>
+
+	<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory"><ref local="sessionFactory"/></property>		
+		<property name="dataSource">
+			<ref local="prodDataSource"/>
+		</property>		
+	</bean>
+
+	<bean id="commonDAO" class="com.oyou.common.hibernate.dao.CommonDAOImpl">
+		<property name="sessionFactory"> <ref local="sessionFactory"/> </property>
+	</bean>
+
+	<bean id="bibleDAO" class="com.oyou.domain.bible.BibleDAOImpl">
+		<property name="sessionFactory"> <ref local="sessionFactory"/> </property>
+	</bean>
+
+</beans>

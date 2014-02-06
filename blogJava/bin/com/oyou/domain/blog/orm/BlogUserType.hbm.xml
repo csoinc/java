@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.blog.orm" default-access="field">
+	<class name="BlogUserType" table="blog_user_type">
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="native" /-->
+		</id>
+		<property name="name" />
+		<property name="nameCN" column="name_cn" />
+		<property name="nameTW" column="name_tw" />
+		<property name="status" />
+	</class>
+
+</hibernate-mapping>

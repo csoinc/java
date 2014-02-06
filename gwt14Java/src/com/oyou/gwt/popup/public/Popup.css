@@ -1,0 +1,526 @@
+.gwt-BorderedPanel {
+	
+}
+
+.gwt-Button {
+	background: #f5f5f5;
+	border: 1px solid #aaa;
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+	padding: 2px;
+	width: 12em;
+}
+
+.gwt-Button:active {
+	border: 1px solid #aaa;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+.gwt-Button [disabled] {
+	background: #ccc;
+	border: 1px solid #999;
+	border-top: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	color: #888;
+}
+
+.gwt-Canvas {
+	
+}
+
+.gwt-CheckBox {
+	
+}
+
+.gwt-DialogBox {
+	border: 2px outset;
+	background-color: white;
+}
+
+.gwt-DialogBox .Caption {
+	background-color: #C3D9FF;
+	padding: 3px;
+	margin: 2px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.gwt-FileUpload {
+	
+}
+
+.gwt-Frame {
+	
+}
+
+.gwt-HTML {
+	font-size: 12px;
+}
+
+.gwt-Hyperlink {
+	font-size: 12px;
+}
+
+.gwt-Image {
+	
+}
+
+.gwt-Label {
+	
+}
+
+.gwt-ListBox {
+	
+}
+
+.gwt-MenuBar {
+	background-color: #C3D9FF;
+	border: 1px solid #87B3FF;
+	cursor: default;
+}
+
+.gwt-MenuBar .gwt-MenuItem {
+	padding: 1px 4px 1px 4px;
+	cursor: default;
+}
+
+.gwt-MenuBar .gwt-MenuItem-selected {
+	background-color: #E8EEF7;
+}
+
+.gwt-PasswordTextBox {
+	
+}
+
+.gwt-RadioButton {
+	
+}
+
+.gwt-TabPanel {
+	margin-top: 4px;
+}
+
+.gwt-TabPanelBottom {
+	background-color: #E8EEF7;
+}
+
+.gwt-TabBar {
+	padding-top: 2px;
+	border-bottom: 4px solid #87B3FF;
+	background-color: #fff;
+}
+
+.gwt-TabBar .gwt-TabBarFirst {
+	
+}
+
+.gwt-TabBar .gwt-TabBarRest {
+	
+}
+
+.gwt-TabBar .gwt-TabBarItem {
+	padding: 4px;
+	cursor: pointer;
+	cursor: hand;
+	background-color: #e8eef7;
+	border-bottom: 2px solid white;
+	margin-right: 2px;
+}
+
+.gwt-TabBar .gwt-TabBarItem-selected {
+	padding: 4px;
+	font-weight: bold;
+	cursor: default;
+	background-color: #87b3ff;
+	border-bottom: 2px solid #87b3ff;
+	margin-right: 2px;
+}
+
+.gwt-TextArea {
+	
+}
+
+.gwt-TextBox {
+	
+}
+
+.gwt-TextBox-readonly {
+	color: #888;
+}
+
+.gwt-StackPanel {
+	
+}
+
+.gwt-StackPanel .gwt-StackPanelItem {
+	background-color: #C3D9FF;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem-selected {
+	
+}
+
+.gwt-PushButton-up {
+	background-color: #C3D9FF;
+	padding: 2px;
+	border: 2px solid transparent;
+	border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205)
+		rgb(232, 241, 255);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-up-hovering {
+	background-color: #C3D9FF;
+	padding: 2px;
+	border: 2px solid transparent;
+	border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205)
+		rgb(232, 241, 255);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-down {
+	background-color: #C3D9FF;
+	padding: 2px;
+	border: 2px solid transparent;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-PushButton-down-hovering {
+	background-color: #C3D9FF;
+	padding: 2px;
+	border: 2px solid transparent;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-up {
+	background-color: #C3D9FF;
+	padding: 2px;
+	border: 2px solid transparent;
+	border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205)
+		rgb(232, 241, 255);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-up-hovering {
+	background-color: #C3D9FF;
+	padding: 2px;
+	border: 2px solid transparent;
+	border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205)
+		rgb(232, 241, 255);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-down {
+	background-color: #C3D9FF;
+	padding: 2px;
+	background-color: #E8F1FF;
+	border: 2px solid transparent;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-ToggleButton-down-hovering {
+	background-color: #C3D9FF;
+	padding: 2px;
+	background-color: #E8F1FF;
+	border: 2px solid transparent;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-Tree {
+	
+}
+
+.gwt-Tree img {
+	vertical-align: middle;
+}
+
+.gwt-Tree .gwt-TreeItem {
+	background-color: white;
+	font-size: x-small;
+	margin: 4px 0px 0px 4px;
+}
+
+.gwt-Tree .gwt-TreeItem-selected {
+	background-color: #E8EEF7;
+	text-decoration: underline;
+}
+
+.gwt-RichTextArea {
+	border: 1px solid black;
+	background-color: white;
+}
+
+.gwt-RichTextToolbar {
+	background-color: #C3D9FF;
+	padding: 2px;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up {
+	margin-right: 2px;
+	border: 1px solid #C3D9FF;
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-up-hovering {
+	margin-right: 2px;
+	border: 1px solid #C3D9FF;
+	border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205)
+		rgb(232, 241, 255);
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down {
+	margin-right: 2px;
+	border: 1px solid #C3D9FF;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+}
+
+.gwt-RichTextToolbar .gwt-PushButton-down-hovering {
+	margin-right: 2px;
+	border: 1px solid #C3D9FF;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up {
+	margin-right: 2px;
+	border: 1px solid #C3D9FF;
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-up-hovering {
+	margin-right: 2px;
+	border: 1px solid #C3D9FF;
+	border-color: #E8F1FF rgb(157, 174, 205) rgb(157, 174, 205)
+		rgb(232, 241, 255);
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down {
+	margin-right: 2px;
+	background-color: #E8F1FF;
+	border: 1px solid #C3D9FF;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+}
+
+.gwt-RichTextToolbar .gwt-ToggleButton-down-hovering {
+	margin-right: 2px;
+	background-color: #E8F1FF;
+	border: 1px solid #C3D9FF;
+	border-color: #9DAECD rgb(232, 241, 255) rgb(232, 241, 255)
+		rgb(157, 174, 205);
+}
+
+.gwt-HorizontalSplitPanel {
+	border: 8px solid #C3D9FF;
+}
+
+.gwt-HorizontalSplitPanel .hsplitter {
+	background-color: #C3D9FF;
+	cursor: move;
+}
+
+.gwt-HorizontalSplitPanel .left {
+	background-color: #E8EEF7;
+}
+
+.gwt-VerticalSplitPanel {
+	
+}
+
+.gwt-VerticalSplitPanel .splitter {
+	background-color: #C3D9FF;
+	height: 8px;
+	cursor: move;
+}
+
+.gwt-SuggestBoxPopup {
+	border: 2px solid #C3D9FF;
+}
+
+.gwt-SuggestBoxPopup .item {
+	padding: 2px;
+}
+
+.gwt-SuggestBoxPopup .item-selected {
+	background-color: #C3D9FF;
+	padding: 2px;
+}
+
+.gwt-DisclosurePanel {
+	border: 0px outset;
+	background-color: white;
+	font-size: 12px;
+}
+
+.gwt-DisclosurePanel-open {
+	border: 1px outset;
+	background-color: white;
+	font-size: 12px;
+}
+
+.gwt-DisclosurePanel-closed {
+	border: 0px outset;
+	background-color: white;
+	font-size: 12px;
+}
+
+.header {
+	background-color: white; /*#C3D9FF*/;
+	padding: 1px;
+	margin: 1px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.content {
+	background-color: white; /*#C3D9FF*/;
+	padding: 1px;
+	margin: 1px;
+	font-weight: normal;
+	cursor: default;
+}
+
+.gwt-DialogBox {
+	background-color: white;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+}
+
+.gwt-DialogBox .Caption {
+	font-weight: bold;
+	cursor: pointer; cursor : hand;
+	padding: 5px 10px;
+	border-bottom: 1px solid #666;
+	border-top: 1px solid #666;
+	text-align: left;;
+	cursor: hand;
+}
+
+.gwt-DialogBox td {
+	text-align: right;
+}
+
+.gwt-DialogBox {
+	margin: 10px;
+}
+
+.gwt-MenuBar {
+	background: #c3d9ff;
+	cursor: default;
+}
+
+.gwt-MenuItem {
+	font-size: 80%;
+	margin: 1px;
+	cursor: default;
+}
+
+.gwt-MenuItem-selected {
+	background: #e8eef7;
+}
+
+.gwt-Tree {
+	
+}
+
+.gwt-Tree .gwt-TreeItem span * {
+	margin: 0 4px;
+}
+
+.gwt-Tree .gwt-TreeItem {
+	font-size: 80%;
+	cursor: default;
+}
+
+.gwt-Tree .gwt-TreeItem span {
+	padding: 2px 0;
+}
+
+.gwt-Tree .gwt-TreeItem-selected span {
+	background: #ccc;
+}
+
+.gwt-StackPanel {
+	background: #fff;
+	width: 15em;
+	border-bottom: 1px solid #666;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem {
+	cursor: pointer;
+	cursor: hand;
+}
+
+.gwt-StackPanel .gwt-StackPanelItem-selected {
+	border-bottom: 1px solid #666;
+}
+
+.gwt-StackPanel .lcaption {
+	width: 32px;
+	padding: 0 0 4px 5px;
+}
+
+.gwt-StackPanel .rcaption {
+	padding: 0 0 4px 5px;
+}
+
+.gwt-StackPanel .box-20 {
+	text-align: right;
+}
+
+.Error-Dialog {
+	border: 2px outset;
+	background-color: white;
+	font-size: 12px;
+}
+
+.Error-Dialog .Caption {
+	background-color: #EED9C3;
+	font-size: 12px;
+	padding: 3px;
+	margin: 2px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.Popup-Dialog {
+	border: 2px outset;
+	background-color: white;
+	font-size: 12px;
+}
+
+.Popup-Dialog .Caption {
+	background-color: #C3D9FF;
+	font-size: 12px;
+	padding: 3px;
+	margin: 2px;
+	font-weight: bold;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.Popup-Popup {
+	background-color: white;
+	font-size: 12px;
+	border: 1px solid #87B3FF;
+	padding: 4px;
+}

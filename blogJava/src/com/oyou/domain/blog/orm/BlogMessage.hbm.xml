@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.blog.orm" default-access="field">
+	<class name="BlogMessage" table="blog_message">
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="native" /-->
+		</id>
+		<property name="title" column="title" />
+		<property name="summary" column="summary" />
+		<property name="message" column="message" />
+		<property name="uploadFile" column="upload_file" />
+		<property name="linkURL" column="link_url" />
+		<many-to-one name="blogUser" column="user_id" lazy="false" class="BlogUser" />
+		<many-to-one name="blogGroup" column="group_id" lazy="false" class="BlogGroup" />
+		<many-to-one name="blogMessageType" column="message_type_id" lazy="false" class="BlogMessageType" />
+		<property name="createTime" column="create_time" />
+		<property name="updateTime" column="update_time" />
+		<property name="status" />
+		<one-to-one name="blogMessageStatistic" class="BlogMessageStatistic" property-ref="statisticId" />
+
+		<set name="blogReplyMessages" inverse="true" lazy="false">
+            <key column="message_id"/>
+            <one-to-many class="BlogReplyMessage"/>
+        </set>
+	</class>
+</hibernate-mapping>

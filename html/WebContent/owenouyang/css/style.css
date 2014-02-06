@@ -1,0 +1,178 @@
+body {
+	background-color: #172029;
+}
+
+#container {
+	background-color: #171D29;
+	margn: 5px 3px 0px 0px;
+}
+
+#banner {
+	height: 124px;
+	background-color: #FEFEDC;
+	background-image: url(../image/bg.jpg);
+}
+
+.logobox {
+	float: left;
+	width: 163px;
+	height: 122px;
+	background-image: url(../image/kb.jpg);
+}
+
+.lbox {
+	width: 150px;
+	height: 100%;
+	background-color: #171D29;
+	padding: 0px 1px 1px 1px;
+	color: #fff;
+}
+
+.textbox {
+	height: 30px;
+	margin-left: 172px;
+	text-align: left;
+	font-size: 1.0em;
+	color: #fff;
+	padding: 4px 0px 0px 0px;
+	font-family: "verdana", arial, sans-serif, times;
+}
+
+.navbox {
+	float: right;
+	border: 0px solid #000;
+	width: 440px;
+	height: 30px;
+	margn: 3px 3px 0px 0px;
+	background-color: #;
+}
+
+#content {
+	margin-top: 0px;
+	margin-left: 164px;
+	height: 100%;
+	background-color: #fff;
+}
+
+blockquote {
+	border: 2px solid #CECFC6;
+	padding: 9px;
+	background-image: url(../image/bg.jpg);
+	background-color: #000;
+	font-size: 0.9em;
+	font-family: "verdana", arial, sans-serif;
+	color: #fff;
+}
+
+#left {
+	float: left;
+	width: 158px;
+	height: 100%;
+	text-align: left;
+	font-size: 1.0em;
+	color: #fff;
+	padding: 0px;
+	background-color: #171D29;
+	color: #ffffff;
+}
+
+img.left {
+	float: left;
+	margin-right: 7px;
+	margin-left: 3px;
+	border-left: 0px solid #171D29;
+}
+
+img.right {
+	float: right;
+	margin-left: 5px;
+	border: 0px outset #6D8458;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 5;
+	margin-bottom: 0em;
+	float: left;
+	font: bold 110% Tohoma;
+	width: 100%;
+	border: 0px solid #625e00;
+	background-color: #;
+}
+
+#menu ul li {
+	display: inline;
+}
+
+#menu ul li a {
+	float: left;
+	color: #000;
+	padding: 5px 5px;
+	text-decoration: none;
+}
+
+#menu ul li a:visited {
+	color: blue;
+}
+
+#menu ul li a:hover {
+	color: white;
+	background-color: #172029;
+}
+
+p {
+	background-color: #fff;
+	padding: 0px 0px 2px 5px;
+	margin: 0px 2px 4px 0px;
+	text-align: left;
+	word-spacing: 2px;
+	font-size: 16px;
+	font-family: arial;
+	color: #000;
+}
+
+#left p {
+	background-color: #fff;
+	padding: 0px 4px 2px 4px;
+	margin: 5px 1px 1px 0px;
+	text-align: left;
+	word-spacing: 2px;
+	font-size: 12px;
+	font-family: arial;
+	color: #000;
+}
+
+h1 {
+	float: right;
+	margin: 30px 270px 0px 0px;
+	font-size: 2.0em;
+	color: #65B7FF;
+	font-family: "times ", verdana, arial, sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.0em;
+	color: #fff;
+	padding: 3px;
+	font-family: "times", verdana, arial, sans-serif, engravers mt bold;
+}
+
+h3 {
+	font-size: 1.2em;
+	color: #000;
+	margin-left: 5px;
+	padding-top: 3px;
+	border-bottom: 1px solid #000;
+	font-family: " sans-serif", verdana, arial, times, engravers mt bold;
+}
+
+#footer {
+	clear: both;
+	text-align: center;
+	font-size: 1.3em;
+	padding: 5px;
+	color: #fff;
+	background-color: #172029;
+	background-image: url(../image/bg.jpg);
+}

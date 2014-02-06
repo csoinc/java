@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.bible.orm" default-access="field">
+	<class name="BibleLine" table="bible_line">
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="sequence" /-->
+			<!-- generator class="native" /-->
+		</id>
+		<property name="sequence" />
+		<property name="code" />
+		<property name="chapter" />
+		<property name="section" />
+		<property name="content" column="content" />
+		<property name="contentCN" column="content_cn" />
+		<property name="contentTW" column="content_tw"  />
+		<many-to-one name="bibleBook" column="sequence" lazy="false" property-ref="sequence" class="BibleBook" insert="false" update="false" />
+	</class>
+
+</hibernate-mapping>

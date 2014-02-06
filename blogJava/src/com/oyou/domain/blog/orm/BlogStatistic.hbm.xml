@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.blog.orm" default-access="field">
+	<class name="BlogStatistic" table="blog_statistic" discriminator-value="" >
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="native" /-->
+		</id>
+		<discriminator column="statistic_table" insert="true" />
+		<property name="statisticId" column="statistic_id" />
+		<property name="statisticTable" column="statistic_table" insert="false" update="false" />
+		<property name="viewTimes" column="view_times" />
+		<property name="updateTimes" column="update_times" />
+		<property name="status" />
+
+		<subclass name="BlogMessageStatistic" discriminator-value="Message">
+		</subclass>
+
+		<subclass name="BlogReplyMessageStatistic" discriminator-value="ReplyMessage">
+		</subclass>
+
+		<subclass name="BlogUserStatistic" discriminator-value="User">
+		</subclass>
+
+	</class>
+
+</hibernate-mapping>

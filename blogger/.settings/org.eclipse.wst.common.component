@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="blogger">
+        <wb-resource deploy-path="/" source-path="/WebContent"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/UnitTest"/>
+        <dependent-module archiveName="blogJava.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/blogJava/blogJava">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="gwt15Java.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/gwt15Java/gwt15Java">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/blogweb/build/classes"/>
+        <property name="context-root" value="blogger"/>
+    </wb-module>
+</project-modules>

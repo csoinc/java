@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.oyou.domain.blog.orm" default-access="field">
+	<class name="BlogUserGroup" table="blog_user_group">
+		<id name="id" column="id" type="long">
+			<generator class="identity" />
+			<!-- generator class="native" /-->
+		</id>
+		<property name="groupOwner" column="group_owner" />
+		<many-to-one name="blogUser" column="user_id" lazy="false" class="BlogUser" />
+		<many-to-one name="blogGroup" column="group_id" lazy="false" class="BlogGroup" />
+		<property name="createTime" column="create_time" />
+		<property name="updateTime" column="update_time" />
+		<property name="status" />
+	</class>
+
+</hibernate-mapping>

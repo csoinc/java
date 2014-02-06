@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="UnitTest"/>
+	<classpathentry kind="lib" path="/libJava/activation.jar"/>
+	<classpathentry kind="lib" path="/libJava/antlr-2.7.6rc1.jar"/>
+	<classpathentry kind="lib" path="/libJava/aopalliance.jar"/>
+	<classpathentry kind="lib" path="/libJava/asm-attrs.jar"/>
+	<classpathentry kind="lib" path="/libJava/asm.jar"/>
+	<classpathentry kind="lib" path="/libJava/aspectjrt-1.2.1.jar"/>
+	<classpathentry kind="lib" path="/libJava/c3p0-0.9.0.jar"/>
+	<classpathentry kind="lib" path="/libJava/cactus-1.7.2.jar"/>
+	<classpathentry kind="lib" path="/libJava/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-attributes-api.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-codec.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-collections.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-dbcp.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-digester.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-fileupload.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-httpclient.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-lang.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-logging.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-pool.jar"/>
+	<classpathentry kind="lib" path="/libJava/commons-validator.jar"/>
+	<classpathentry kind="lib" path="/libJava/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/libJava/ehcache-1.2.3.jar"/>
+	<classpathentry kind="lib" path="/libJava/gwt-benchmark-viewer.jar"/>
+	<classpathentry kind="lib" path="/libJava/gwt-dev-windows.jar"/>
+	<classpathentry kind="lib" path="/libJava/gwt-servlet.jar"/>
+	<classpathentry kind="lib" path="/libJava/gwt-user.jar"/>
+	<classpathentry kind="lib" path="/libJava/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/libJava/itext-2.0.2.jar"/>
+	<classpathentry kind="lib" path="/libJava/iTextAsian.jar"/>
+	<classpathentry kind="lib" path="/libJava/jai_codec.jar"/>
+	<classpathentry kind="lib" path="/libJava/jai_core.jar"/>
+	<classpathentry kind="lib" path="/libJava/jakarta-oro.jar"/>
+	<classpathentry kind="lib" path="/libJava/jstl.jar"/>
+	<classpathentry kind="lib" path="/libJava/jta.jar"/>
+	<classpathentry kind="lib" path="/libJava/junit-4.0.jar"/>
+	<classpathentry kind="lib" path="/libJava/log4j-1.2.11.jar"/>
+	<classpathentry kind="lib" path="/libJava/mail.jar"/>
+	<classpathentry kind="lib" path="/libJava/mlibwrapper_jai.jar"/>
+	<classpathentry kind="lib" path="/libJava/mysql-5.0.4.jar"/>
+	<classpathentry kind="lib" path="/libJava/postgresql-8.2-504.jdbc3.jar"/>
+	<classpathentry kind="lib" path="/libJava/quartz-1.5.1.jar"/>
+	<classpathentry kind="lib" path="/libJava/spring.jar"/>
+	<classpathentry kind="lib" path="/libJava/standard.jar"/>
+	<classpathentry kind="lib" path="/libJava/struts.jar"/>
+	<classpathentry kind="src" path="OpenSource"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.eclipse.jst.server.tomcat.runtimeTarget/Apache Tomcat v6.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

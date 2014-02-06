@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- Meta Data -->
+<meta http-equiv="Content-Language" content="text/html; charset=UTF-8"/>
+<meta name="Keywords" content="Blogger, Blog, Oxidu, OYOSOFT, Owen Ou"/>
+<meta name="description" content="Blogger Web"/>
+<!-- Link to Style External Sheet -->
+<link href="css/style.css" type="text/css" rel="stylesheet" />
+<link href="css/menutab.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.2.6.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/dojo/1.2/dojo/dojo.xd.js"></script> 
+<script type="text/javascript" src="../javascript/jquerycssmenu.js"></script>
+<script type="text/javascript" src="../javascript/blogger.js"></script>
+<script type="text/javascript">
+	var languageCd = "en";	
+	djConfig = {
+		isDebug: false, 
+		parseOnLoad: true, 
+		parseWidget: false,
+		locale: languageCd
+	}
+</script>
+
+
+
+
+</head>
+
+<body>
+
+<div id="pages">
+  <div id="links">
+  </div>
+</div>
+
+<script type="text/javascript">
+	//blogger.initBlogger(groupId, messageId);
+    //blogger.createPageLinksElements(elemId,childId,totalPages,currPage,pageLength,idPrefix,actionName);
+	blogger.initBlogger(17,0);  
+    blogger.createPageLinksElements("pages","links",300,5,10,"message","message.do");
+
+</script>
+
+</body>
+
+</html>
