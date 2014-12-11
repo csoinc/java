@@ -8,7 +8,7 @@ import junit.framework.TestCase;
 
 public class CollectionsTests extends TestCase {
 
-	public void ntestProcess() {
+	public void testProcess() {
 		CollectionsHelper oo = new CollectionsHelper();
 		oo.process();
 	}
