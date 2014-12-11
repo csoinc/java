@@ -2,11 +2,6 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="unitTest"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jre6">
-		<attributes>
-			<attribute name="owner.project.facets" value="jst.java"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="/libJava/activation.jar"/>
 	<classpathentry kind="lib" path="/libJava/antlr-2.7.6rc1.jar"/>
 	<classpathentry kind="lib" path="/libJava/aopalliance.jar"/>
@@ -54,5 +49,6 @@
 	<classpathentry kind="lib" path="/libJava/standard.jar"/>
 	<classpathentry kind="lib" path="/libJava/struts.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/blogJava"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
