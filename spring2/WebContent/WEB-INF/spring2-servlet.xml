@@ -6,7 +6,7 @@
        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 	<!-- the application context definition for the com.oyou.inventory DispatcherServlet -->
-	<bean id="productManager" class="com.oyou.inventory.service.SimpleProductManager">
+	<bean id="productManager" class="com.oyou.spring2.service.SimpleProductManager">
 		<property name="products">
 			<list>
 				<ref bean="product1" />
@@ -16,17 +16,17 @@
 		</property>
 	</bean>
 
-	<bean id="product1" class="com.oyou.inventory.domain.Product">
+	<bean id="product1" class="com.oyou.spring2.domain.Product">
 		<property name="description" value="Lamp" />
 		<property name="price" value="5.75" />
 	</bean>
 
-	<bean id="product2" class="com.oyou.inventory.domain.Product">
+	<bean id="product2" class="com.oyou.spring2.domain.Product">
 		<property name="description" value="Table" />
 		<property name="price" value="75.25" />
 	</bean>
 
-	<bean id="product3" class="com.oyou.inventory.domain.Product">
+	<bean id="product3" class="com.oyou.spring2.domain.Product">
 		<property name="description" value="Chair" />
 		<property name="price" value="22.79" />
 	</bean>
@@ -36,16 +36,16 @@
 		<property name="basename" value="messages" />
 	</bean>
 
-	<bean name="/hello.htm" class="com.oyou.inventory.web.InventoryController">
+	<bean name="/hello.htm" class="com.oyou.spring2.web.InventoryController">
 		<property name="productManager" ref="productManager" />
 	</bean>
 
-	<bean name="/priceincrease.htm" class="com.oyou.inventory.web.PriceIncreaseFormController">
+	<bean name="/priceincrease.htm" class="com.oyou.spring2.web.PriceIncreaseFormController">
 		<property name="sessionForm" value="true" />
 		<property name="commandName" value="priceIncrease" />
 		<property name="commandClass" value="com.oyou.inventory.service.PriceIncrease" />
 		<property name="validator">
-			<bean class="com.oyou.inventory.service.PriceIncreaseValidator" />
+			<bean class="com.oyou.spring2.service.PriceIncreaseValidator" />
 		</property>
 		<property name="formView" value="priceincrease" />
 		<property name="successView" value="hello.htm" />

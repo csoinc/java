@@ -12,11 +12,11 @@
 
 	<!-- the parent application context definition for the com.oyou.inventory application -->
 
-	<bean id="productManager" class="com.oyou.inventory.service.SimpleProductManager">
+	<bean id="productManager" class="com.oyou.spring2.service.SimpleProductManager">
 		<property name="productDao" ref="productDao" />
 	</bean>
 
-	<bean id="productDao" class="com.oyou.inventory.repository.JdbcProductDao">
+	<bean id="productDao" class="com.oyou.spring2.repository.JdbcProductDao">
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
