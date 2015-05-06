@@ -1,1 +1,9 @@
-/Resources
+/Resources/
+/Struts-Layout.properties
+/cactus.properties
+/commons-logging.properties
+/dynMenu.properties
+/hibernate3.cfg.xml
+/jdbc-config.properties
+/log4j.properties
+/spring/
