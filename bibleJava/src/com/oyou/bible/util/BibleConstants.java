@@ -51,7 +51,7 @@ public class BibleConstants {
 	 */
 	public boolean SECTION_MODE = true;
 	public String CHAPTER_SECTION_SEPARATOR = ":";
-	public String PDF_AUTHOR = "OYOU";
+	public String PDF_AUTHOR = "CHINESS BIBLE INTERNATIONAL LTD";
 	public String USER_DIR_KEY = "user.dir";
 	public String WEBAPP_ROOT_KEY = "webapp.root";
 	public String USER_LANGUAGE_KEY = "user.language";
@@ -59,29 +59,29 @@ public class BibleConstants {
 	private String rootPath = null; 
 
 	private BibleConstants() {
-		properties.put(CN_TEXT_FILE, "/bible/text/hgb.txt");
-		properties.put(TW_TEXT_FILE, "/bible/text/hb5.txt");
-		properties.put(BBE_TEXT_FILE, "/bible/text/bbe.txt");
-		properties.put(KJV_TEXT_FILE, "/bible/text/kjv.txt");
-		properties.put(NIV_TEXT_FILE, "/bible/text/niv.txt");
-		properties.put(CN_INDEX_FILE, "/bible/index/books-CN.txt");
-		properties.put(TW_INDEX_FILE, "/bible/index/books-TW.txt");
-		properties.put(NIV_INDEX_FILE, "/bible/index/books-NIV.txt");
-		properties.put(BBE_INDEX_FILE, "/bible/index/books-BBE.txt");
-		properties.put(KJV_INDEX_FILE, "/bible/index/books-KJV.txt");
-		properties.put(INDEX_FILE, "/bible/index/books.txt");
-		properties.put(CN_PDF_FILE, "/bible/pdf/hgb-slide-v2.2.pdf");
-		properties.put(TW_PDF_FILE, "/bible/pdf/hb5-slide-v2.1.pdf");
-		properties.put(BBE_PDF_FILE, "/bible/pdf/bbe-slide-v2.1.pdf");
-		properties.put(KJV_PDF_FILE, "/bible/pdf/kjv-v2.1.pdf");
-		properties.put(CN_IMAGE_FILE, "/bible/img/coverB.jpg");
-		properties.put(TW_IMAGE_FILE, "/bible/img/coverA.jpg");
-		properties.put(BBE_IMAGE_FILE, "/bible/img/coverC.jpg");
-		properties.put(KJV_IMAGE_FILE, "/bible/img/coverD.jpg");
-		properties.put(CNBBEKJV_PDF_FILE, "/bible/pdf/hgb-kjv-bbe-v2.1.pdf");
-		properties.put(TWBBEKJV_PDF_FILE, "/bible/pdf/hb5-kjv-bbe-v2.1.pdf");
-		properties.put(NIV_INPUT_FILE, "/bible/input/niv.txt");
-		properties.put(NIV_OUTPUT_FILE, "/bible/output/niv.txt");
+		properties.put(CN_TEXT_FILE, "/data/bible/text/hgb.txt");
+		properties.put(TW_TEXT_FILE, "/data/bible/text/hb5.txt");
+		properties.put(BBE_TEXT_FILE, "/data/bible/text/bbe.txt");
+		properties.put(KJV_TEXT_FILE, "/data/bible/text/kjv.txt");
+		properties.put(NIV_TEXT_FILE, "/data/bible/text/niv.txt");
+		properties.put(CN_INDEX_FILE, "/data/bible/index/books-CN.txt");
+		properties.put(TW_INDEX_FILE, "/data/bible/index/books-TW.txt");
+		properties.put(NIV_INDEX_FILE, "/data/bible/index/books-NIV.txt");
+		properties.put(BBE_INDEX_FILE, "/data/bible/index/books-BBE.txt");
+		properties.put(KJV_INDEX_FILE, "/data/bible/index/books-KJV.txt");
+		properties.put(INDEX_FILE, "/data/bible/index/books.txt");
+		properties.put(CN_PDF_FILE, "/data/bible/pdf/hgb-slide-v2.2.pdf");
+		properties.put(TW_PDF_FILE, "/data/bible/pdf/hb5-slide-v2.1.pdf");
+		properties.put(BBE_PDF_FILE, "/data/bible/pdf/bbe-slide-v2.1.pdf");
+		properties.put(KJV_PDF_FILE, "/data/bible/pdf/kjv-v2.1.pdf");
+		properties.put(CN_IMAGE_FILE, "/data/bible/img/coverB.jpg");
+		properties.put(TW_IMAGE_FILE, "/data/bible/img/coverA.jpg");
+		properties.put(BBE_IMAGE_FILE, "/data/bible/img/coverC.jpg");
+		properties.put(KJV_IMAGE_FILE, "/data/bible/img/coverD.jpg");
+		properties.put(CNBBEKJV_PDF_FILE, "/data/bible/pdf/hgb-kjv-bbe-v2.1.pdf");
+		properties.put(TWBBEKJV_PDF_FILE, "/data/bible/pdf/hb5-kjv-bbe-v2.1.pdf");
+		properties.put(NIV_INPUT_FILE, "/data/bible/input/niv.txt");
+		properties.put(NIV_OUTPUT_FILE, "/data/bible/output/niv.txt");
 	}
 	
 	public String getProperty(String key) {

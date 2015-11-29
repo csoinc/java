@@ -1,7 +1,7 @@
 package com.oyou.common.reader;
 
 /**
- * @author	Owen Ou
+ * @author	Owen Ouyang
  */
 public interface Encoder {
 	String GB2312 = "GB2312";

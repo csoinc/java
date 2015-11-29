@@ -4,7 +4,7 @@ import com.oyou.bible.model.Line;
 
 /**
  * reader interface
- * @author	Owen Ou
+ * @author	Owen Ouyang
  *
  */
 public interface LineReader {

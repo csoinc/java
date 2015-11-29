@@ -13,7 +13,7 @@ public class CNPdfFile implements PdfFile {
 				BibleConstants.getInstance().getProperty(BibleConstants.CN_PDF_FILE), 
 				BibleConstants.getInstance().PDF_AUTHOR, 
 				BibleConstants.getInstance().getProperty(BibleConstants.CN_IMAGE_FILE), 
-				CNWords.LICENSED_TO+CNWords.MCBC);
+				CNWords.VERSION);
 		
 		writer.createCover();
 		writer.createContent();
@@ -25,7 +25,7 @@ public class CNPdfFile implements PdfFile {
 				BibleConstants.getInstance().getProperty(BibleConstants.CN_PDF_FILE), 
 				BibleConstants.getInstance().PDF_AUTHOR, 
 				BibleConstants.getInstance().getProperty(BibleConstants.CN_IMAGE_FILE), 
-				CNWords.LICENSED_TO+CNWords.MCBC);
+				CNWords.VERSION);
 		
 		writer.createCover();
 		writer.createContentSlideShow();
