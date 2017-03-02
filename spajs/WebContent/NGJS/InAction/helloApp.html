@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="helloApp">
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script>
+	var helloApp = angular.module('helloApp', []);
+
+	helloApp.controller('helloCtrl', function($scope) {
+		$scope.greeting = 'Hello';
+		$scope.person = 'World';
+	});
+</script>
+
+</head>
+<body>
+	<div ng-controller="helloCtrl">
+		<p>{{greeting}} {{person}}</p>
+		<input ng-model="person">
+	</div>
+</body>
+</html>

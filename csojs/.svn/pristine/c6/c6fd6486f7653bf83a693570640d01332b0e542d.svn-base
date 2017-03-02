@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html data-ng-app="demoApp" >
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script>
+
+	var demoApp = angular.module('demoApp', []);
+
+	demoApp.controller('SimpleController', function($scope) {
+		$scope.customers = [
+		 					{name: 'John Smith', city: 'Phoenix'},	           
+		 					{name: 'John Doe', city: 'New York'},	           
+		 					{name: 'Owen Ouyang', city: 'Toronto'},	           
+		 					{name: 'Jane Doe', city: 'San Francisco'}	           
+		                    ];		
+	});
+	
+
+</script>
+<title>Angular JS</title>
+</head>
+<body data-ng-init="names=['John Smith', 'John Doe', 'Jane Doe']">
+	<div>
+		Name: <br />
+		<input type = "text" data-ng-model="person" /> {{person}}<br />
+
+		<ul>
+			<li data-ng-repeat="personName in names" > {{personName}} </li>
+		
+		</ul>	
+	</div>	
+
+	<div data-ng-controller="SimpleController">
+
+		Customer: <br />
+		<input type = "text" data-ng-model="name" /> <br />
+
+		<ul>
+			<li data-ng-repeat="cust in customers | filter:name | orderBy: 'name'" >
+				{{cust.name | uppercase}} - {{cust.city}}
+			</li>
+		
+		</ul>	
+	
+	
+	
+	
+	</div>
+</body>
+</html>

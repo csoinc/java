@@ -1,0 +1,710 @@
+HTML {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+BODY {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+DIV {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+SPAN {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+APPLET {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+OBJECT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+IFRAME {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+H1 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+H2 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+H3 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+H4 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+H5 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+H6 {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+P {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+BLOCKQUOTE {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+PRE {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+A {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+abbr {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+ACRONYM {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+ADDRESS {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+BIG {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+CITE {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+CODE {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+DEL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+DFN {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+EM {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+FONT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+INS {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+KBD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+Q {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+S {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+SAMP {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+SMALL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+STRIKE {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+STRONG {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+SUB {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+SUP {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+VAR {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+B {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+U {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+I {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+CENTER {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+DL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+DT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+DD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+OL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+UL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+LI {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+FIELDSET {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+FORM {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+LABEL {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+LEGEND {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TABLE {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+CAPTION {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TBODY {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TFOOT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+THEAD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TR {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; VERTICAL-ALIGN: baseline; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px; outline: 0
+}
+BODY {
+	LINE-HEIGHT: 1
+}
+OL {
+	LIST-STYLE-TYPE: none
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+BLOCKQUOTE {
+	quotes: none
+}
+Q {
+	quotes: none
+}
+:unknown {
+	outline: 1px solid #000000
+}
+INS {
+	TEXT-DECORATION: none
+}
+DEL {
+	TEXT-DECORATION: line-through
+}
+TABLE {
+	BORDER-COLLAPSE: collapse; border-spacing: 0
+}
+OL {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 20px; LIST-STYLE-TYPE: none
+}
+UL {
+	MARGIN-BOTTOM: 20px; MARGIN-LEFT: 20px; LIST-STYLE-TYPE: none
+}
+LI A {
+	ZOOM: 1
+}
+:unknown {
+	outline: 0
+}
+BODY {
+	FONT: 62.5%/1.5em Verdana, Helvetica, Arial, sans-serif; COLOR: #000; BACKGROUND-COLOR: #fff; TEXT-ALIGN: center
+}
+A {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #666
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+P {
+	MARGIN: 0.5em 0px 1.5em
+}
+H1 {
+	FONT-WEIGHT: bold
+}
+H2 {
+	FONT-WEIGHT: bold
+}
+H3 {
+	FONT-WEIGHT: bold
+}
+H1 {
+	FONT-SIZE: 1.4em; MARGIN: 0.8em 0px 0.5em; COLOR: #000000
+}
+H2 {
+	FONT-SIZE: 1.2em; PADDING-BOTTOM: 6px; COLOR: #4f0035
+}
+H3 {
+	FONT-SIZE: 1.1em; MARGIN: 0.5em 0px; COLOR: #690707
+}
+H4 {
+	FONT-SIZE: 1.1em; COLOR: #aa3d12
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.right {
+	FLOAT: right; MARGIN-LEFT: 20px; TEXT-ALIGN: right
+}
+.left {
+	FLOAT: left; MARGIN-RIGHT: 20px
+}
+.top {
+	MARGIN-TOP: 0px
+}
+.bottom {
+	MARGIN-BOTTOM: 0px
+}
+.center {
+	MARGIN-LEFT: auto; MARGIN-RIGHT: auto; TEXT-ALIGN: center
+}
+A:link {
+	FONT-WEIGHT: bold; COLOR: #660000; TEXT-DECORATION: none
+}
+A:visited {
+	FONT-WEIGHT: bold; COLOR: #660000; TEXT-DECORATION: none
+}
+A:active {
+	FONT-WEIGHT: bold; COLOR: #660000; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #660000; TEXT-DECORATION: underline
+}
+#wrapper {
+	MARGIN: 13px auto 0px; WIDTH: 980px; TEXT-ALIGN: left
+}
+#header1 {
+	WIDTH: 100%; POSITION: relative
+}
+#header {
+	WIDTH: 980px
+}
+#left_column {
+	FONT-SIZE: 1.2em; FLOAT: left; WIDTH: 263px; LINE-HEIGHT: 160%
+}
+#left_navigation {
+	VERTICAL-ALIGN: top; WIDTH: 263px
+}
+#content_area {
+	VERTICAL-ALIGN: top; WIDTH: 717px
+}
+#right_column {
+	FONT-SIZE: 1.2em; FLOAT: right; WIDTH: 710px; LINE-HEIGHT: 160%
+}
+#footer {
+	CLEAR: both; WIDTH: 980px; PADDING-TOP: 20px
+}
+#textlinks A.last {
+	PADDING-RIGHT: 0px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#navbar P A.last {
+	PADDING-RIGHT: 0px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#textlinks {
+	RIGHT: 0px; POSITION: absolute; TOP: 5px; TEXT-ALIGN: right
+}
+#textlinks A {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 1em; PADDING-LEFT: 0.75em; PADDING-BOTTOM: 0px; COLOR: #333; PADDING-TOP: 0px
+}
+#arc {
+	FLOAT: left; BACKGROUND-IMAGE: url(../images/header_arc.gif); WIDTH: 100%; BORDER-BOTTOM: #fff 1px solid; HEIGHT: 92px
+}
+#nav {
+	BACKGROUND: #e3e5e0 no-repeat left center; WIDTH: 980px
+}
+#navbar {
+	BACKGROUND: url(../images/navbar.jpg) #e3e5e0 no-repeat left center; WIDTH: 100%; BORDER-BOTTOM: #fff 8px solid; HEIGHT: 2.75em
+}
+#navbar P {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 1.1em; MARGIN-BOTTOM: 12px; TEXT-TRANSFORM: uppercase; TEXT-ALIGN: center
+}
+#navbar P A {
+	BORDER-RIGHT: #fff 2px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; COLOR: #760011; PADDING-TOP: 0px
+}
+#left_column UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.leftnav {
+	MARGIN-BOTTOM: 10px; OVERFLOW: hidden; WIDTH: 100%
+}
+.leftnav .header {
+	BACKGROUND: url(../images/arc_left.gif) #e3e5e0 no-repeat; FLOAT: left; WIDTH: 100%; BORDER-BOTTOM: #e3e5e0 1px solid; POSITION: relative
+}
+.leftnav .header A {
+	PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 0px; COLOR: #333; PADDING-TOP: 3px
+}
+.leftnav .header IMG {
+	LEFT: 248px; POSITION: absolute; TOP: 6px
+}
+.leftnav .mycolour .header {
+	BACKGROUND: url(../images/arc_left_colour.gif) #760011 repeat-x left top; BORDER-BOTTOM: #000000 1px solid
+}
+.leftnav .mycolour .header A {
+	PADDING-RIGHT: 5px; DISPLAY: block; PADDING-LEFT: 5px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; COLOR: #fff; PADDING-TOP: 3px
+}
+.leftnav H2 {
+	FONT-SIZE: 0.96em; LINE-HEIGHT: 1.4em
+}
+.menu {
+	FONT-SIZE: 94%; FLOAT: left; OVERFLOW: hidden; WIDTH: 100%
+}
+.menu LI {
+	DISPLAY: inline; LINE-HEIGHT: 1.3em
+}
+.menu A:link {
+	COLOR: #444
+}
+.menu A:visited {
+	COLOR: #444
+}
+.menu A:active {
+	COLOR: #444
+}
+.menu A {
+	PADDING-RIGHT: 4px; DISPLAY: block; PADDING-LEFT: 24px; FONT-WEIGHT: bold; BACKGROUND: url(../images/triangle_right.gif) #f7f3e6 no-repeat 12px 13px; PADDING-BOTTOM: 8px; COLOR: #444; PADDING-TOP: 8px; BORDER-BOTTOM: #666 1px dotted
+}
+UL.menu LI A {
+	COLOR: #444
+}
+.menu LI LI A {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 36px; BACKGROUND: url(../images/triangle_right.gif) #f7f3e6 no-repeat 23px 13px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px
+}
+.row {
+	DISPLAY: inline; FLOAT: left; MARGIN-BOTTOM: 10px; WIDTH: 100%; MARGIN-RIGHT: -3px; BORDER-BOTTOM: #666 1px dotted
+}
+#full_footer {
+	BORDER-TOP: #7f7f7f 1px solid; PADDING-BOTTOM: 1em; WIDTH: 100%
+}
+#footer P {
+	FONT-WEIGHT: bold; FONT-SIZE: 0.9em; TEXT-TRANSFORM: uppercase; COLOR: #666
+}
+#footer A {
+	COLOR: #666
+}
+.content {
+	PADDING-RIGHT: 13px; PADDING-LEFT: 13px; FLOAT: left; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.column LI A {
+	FONT-WEIGHT: bold
+}
+.column UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#right_column P A {
+	TEXT-DECORATION: underline
+}
+#right_column A P {
+	TEXT-DECORATION: underline
+}
+#right_column A {
+	FONT-WEIGHT: normal; COLOR: #660000
+}
+#right_column LI A {
+	TEXT-DECORATION: none
+}
+#right_column UL LI {
+	PADDING-LEFT: 5px; MARGIN-LEFT: 10px; COLOR: #000000; LINE-HEIGHT: 200%; LIST-STYLE-TYPE: disc
+}
+.row .header {
+	BORDER-TOP: #666 3px solid; BACKGROUND: url(../images/arc_right_main.gif) #efe7c9 no-repeat; WIDTH: 100%; BORDER-BOTTOM: #999 1px solid; POSITION: relative; HEIGHT: 100%
+}
+.header H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1.2em; FLOAT: none; PADDING-BOTTOM: 5px; MARGIN: 5px 10px 0px; COLOR: #333; PADDING-TOP: 0px
+}
+.header H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 1.1em; FLOAT: none; PADDING-BOTTOM: 5px; MARGIN: 5px 10px 0px; COLOR: #333; PADDING-TOP: 0px
+}
+.inline {
+	VERTICAL-ALIGN: middle
+}
+.photocap {
+	CLEAR: left; FONT-SIZE: 0.1em; LINE-HEIGHT: 6px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 6px
+}
+.grey {
+	BACKGROUND: #d6d6d6
+}
+.colour {
+	BACKGROUND-COLOR: #374559
+}
+#left {
+	FLOAT: left
+}
+.loginhead {
+	FONT-WEIGHT: bold; TEXT-ALIGN: right
+}
+.ogstitle {
+	FONT-SIZE: 1.7em; MARGIN: 0.8em 0px 0.5em; COLOR: #690707
+}
+.columnheadingplain {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.1em; MARGIN: 0.5em 0px; COLOR: #000; BACKGROUND-COLOR: white; TEXT-ALIGN: center
+}
+.columnheading {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #f7f3e6; PADDING-BOTTOM: 5px; COLOR: #4f0035; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.addborder {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.addbordertop {
+	BORDER-TOP: #ccc 1px solid
+}
+.addborderbottom {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+.addborderleft {
+	BORDER-LEFT: #ccc 1px solid
+}
+.addborderright {
+	BORDER-RIGHT: #ccc 1px solid
+}
+.datadisplay {
+	PADDING-LEFT: 6px; FONT-WEIGHT: normal; BACKGROUND: white; COLOR: black
+}
+.actionbutton {
+	BACKGROUND: white; VERTICAL-ALIGN: middle; TEXT-ALIGN: center
+}
+.actionbuttontwo {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #f7f3e6; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.subhead {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #e9eae5; PADDING-BOTTOM: 5px; COLOR: #760011; PADDING-TOP: 5px
+}
+.sidecolumnhead {
+	FONT-WEIGHT: bold; MARGIN: 0.5em 0px; COLOR: #000; TEXT-ALIGN: center
+}
+.sideselect {
+	BACKGROUND: #f8f9f4
+}
+.padsides {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px
+}
+.menutable {
+	FONT-SIZE: 96%; FLOAT: left; OVERFLOW: hidden; WIDTH: 100%
+}
+.rowheader {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; BACKGROUND: white; VERTICAL-ALIGN: top; COLOR: black; TEXT-ALIGN: left
+}
+.rowheader2 {
+	FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: black; BACKGROUND-COLOR: white; TEXT-ALIGN: center
+}
+.inputbox {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; VERTICAL-ALIGN: middle; PADDING-TOP: 5px
+}
+.tableheader {
+	BORDER-TOP: #d6d6d6 3px solid; BACKGROUND: url(../images/arc_right_main.gif) #efe7c9 no-repeat; WIDTH: 100%; POSITION: relative; HEIGHT: 100%
+}
+.errormsg {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; BACKGROUND: white; PADDING-BOTTOM: 5px; COLOR: blue; PADDING-TOP: 5px
+}
+.subheaddropdown {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #efe7c9; COLOR: #4f0035
+}
+.subheaddropdownclear {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: white; COLOR: #4f0035
+}
+.paddropdown {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.subheaddropdown2 {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #f7f3e6; PADDING-BOTTOM: 5px; COLOR: #4f0035; PADDING-TOP: 5px
+}
+.messcent {
+	FONT-SIZE: 94%; FLOAT: left; OVERFLOW: hidden; WIDTH: 100%
+}
+.messcent A:link {
+	FONT-WEIGHT: normal; COLOR: black
+}
+.messcent A:visited {
+	FONT-WEIGHT: normal; COLOR: black
+}
+.messcent A:active {
+	FONT-WEIGHT: normal; COLOR: black
+}
+.missingdata {
+	BORDER-RIGHT: #00f 1px solid; BORDER-TOP: #00f 1px solid; BACKGROUND: white; BORDER-LEFT: #00f 1px solid; BORDER-BOTTOM: #00f 1px solid
+}
+TH {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #f7f3e6; PADDING-BOTTOM: 5px; COLOR: #4f0035; PADDING-TOP: 5px
+}
+.textright {
+	TEXT-ALIGN: right
+}
+.noborder {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.texttop {
+	VERTICAL-ALIGN: top
+}
+#underlinelink A {
+	TEXT-DECORATION: underline
+}
+#footer UL.right {
+	MARGIN-TOP: 0.7em; WIDTH: 490px
+}
+#footer UL.left {
+	MARGIN-LEFT: 0px; WIDTH: 470px
+}
+#footer UL {
+	DISPLAY: inline; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 0.9em; MARGIN: 0px 0px 1em; TEXT-TRANSFORM: uppercase; COLOR: #666
+}
+#footer UL LI {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 0.7em; DISPLAY: inline; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; MARGIN-LEFT: 0px; BORDER-LEFT: #000 1px solid; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+#footer UL LI.noborder {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#footer UL.left LI {
+	FLOAT: left
+}
+#footer P.last-mod {
+	CLEAR: right; FLOAT: right; MARGIN: 0px 10px 0px 0px; TEXT-TRANSFORM: none; WIDTH: 490px; TEXT-ALIGN: right
+}
+/* the div that holds the date picker calendar */
+.dpDiv {
+	}
+
+
+/* the table (within the div) that holds the date picker calendar */
+.dpTable {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-align: center;
+	color: #505050;
+	background-color: #f6f7f2;
+	border: 1px solid #AAAAAA;
+	}
+
+
+/* a table row that holds date numbers (either blank or 1-31) */
+.dpTR {
+	}
+
+
+/* the top table row that holds the month, year, and forward/backward buttons */
+.dpTitleTR {
+	}
+
+
+/* the second table row, that holds the names of days of the week (Mo, Tu, We, etc.) */
+.dpDayTR {
+	}
+
+
+/* the bottom table row, that has the "This Month" and "Close" buttons */
+.dpTodayButtonTR {
+	}
+
+
+/* a table cell that holds a date number (either blank or 1-31) */
+.dpTD {
+	border: 1px solid #ece9d8;
+	}
+
+
+/* a table cell that holds a highlighted day (usually either today's date or the current date field value) */
+.dpDayHighlightTD {
+	background-color: #e9eae5;
+	border: 1px solid #AAAAAA;
+	}
+
+
+/* the date number table cell that the mouse pointer is currently over (you can use contrasting colors to make it apparent which cell is being hovered over) */
+.dpTDHover {
+	background-color: #aca998;
+	border: 1px solid #888888;
+	cursor: pointer;
+	color: red;
+	}
+
+
+/* the table cell that holds the name of the month and the year */
+.dpTitleTD {
+	}
+
+
+/* a table cell that holds one of the forward/backward buttons */
+.dpButtonTD {
+	}
+
+
+/* the table cell that holds the "This Month" or "Close" button at the bottom */
+.dpTodayButtonTD {
+	}
+
+
+/* a table cell that holds the names of days of the week (Mo, Tu, We, etc.) */
+.dpDayTD {
+	background-color: #e9eae5;
+	border: 1px solid #AAAAAA;
+	color: black;
+	}
+
+
+/* additional style information for the text that indicates the month and year */
+.dpTitleText {
+	font-size: 12px;
+	color: gray;
+	font-weight: bold;
+	}
+
+
+/* additional style information for the cell that holds a highlighted day (usually either today's date or the current date field value) */ 
+.dpDayHighlight {
+	color: 4060ff;
+	font-weight: bold;
+	}
+
+
+/* the forward/backward buttons at the top */
+.dpButton {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: white;
+	background: #870619;
+	font-weight: bold;
+	padding: 0px;
+	}
+
+
+/* the "This Month" and "Close" buttons at the bottom */
+.dpTodayButton {
+	font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: white;
+	background: #870619;
+	font-weight: bold;
+	}
+
+.bluebox {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #000099; PADDING-BOTTOM: 5px; COLOR: #FFFFFF; PADDING-TOP: 5px
+}
+.greenbox {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #003300; PADDING-BOTTOM: 5px; COLOR: #FFFFFF; PADDING-TOP: 5px
+}
+.greybox {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 1em; BACKGROUND: #666666; PADDING-BOTTOM: 5px; COLOR: #CCCCCC; PADDING-TOP: 5px
+}
+.viewarrowdown {
+	BACKGROUND-IMAGE: url(../images/view_arrow_down.gif);
+}
+.viewarrowright {
+	BACKGROUND-IMAGE: url(../images/view_arrow_right.gif);
+}

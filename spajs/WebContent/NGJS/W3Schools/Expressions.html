@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+
+	<p>Change the value of the input field:</p>
+
+	<div ng-init="myCol='lightblue';quantity=1;cost=5;firstName='John';lastName='Doe';person={firstName:'Owen',lastName:'Ouyang'};points=[1,15,19,2,40]">
+
+		<input style="background-color: {{myCol" ng-model="myCol" value="{{myCol}}" />
+
+		<p>Total in dollar: {{ quantity * cost }}</p>
+
+		<p>My first expression: {{ 5 + 5 }}</p>
+
+		<p>The name is {{ firstName + " " + lastName }}</p>
+
+		<p>
+			The name (bind) is <span ng-bind="firstName + ' ' + lastName"></span>
+		</p>
+
+		<p>The last name is {{ person.lastName }}</p>
+
+		<p>The third result is {{ points[2] }}</p>
+
+		<p>
+			The third result (bind) is <span ng-bind="points[2]"></span>
+		</p>
+
+	</div>
+
+	<p>AngularJS resolves the expression and returns the result.</p>
+
+	<p>The background color of the input box will be whatever you write in the input field.</p>
+
+
+</body>
+</html>

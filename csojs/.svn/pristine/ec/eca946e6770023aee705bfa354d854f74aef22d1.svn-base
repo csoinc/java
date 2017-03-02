@@ -1,0 +1,16 @@
+prod.jdbcUrl=jdbc:derby://localhost:1527/cso;create=true
+prod.jdbcDriver=org.apache.derby.jdbc.ClientDriver
+prod.userId=
+prod.password=
+prod.schema=cso
+prod.createDataSourceEnabled=false
+prod.dataSourceName=jdbc/cso
+
+
+##prod.jdbcUrl=jdbc:mysql://localhost:3306/cso
+##prod.jdbcDriver=com.mysql.jdbc.Driver
+##prod.userId=cso
+##prod.password=password
+##prod.schema=inventory
+##prod.createDataSourceEnabled=false
+##prod.dataSourceName=jdbc/cso

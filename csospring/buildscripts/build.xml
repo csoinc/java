@@ -1,0 +1,111 @@
+<project name="APS build" default="aps.external" basedir=".">	
+	
+	<property file="build.properties" />
+	
+	<import file="common.xml"/>
+	
+	<property name="ear.project.name" value="${project.prefix}${ear.project.name.suffix}" />
+	<property name="service.project.name" value="${project.prefix}${service.project.name.suffix}" />
+	<property name="web.project.name" value="${project.prefix}${web.project.name.suffix}" />
+
+	<property name="token.webapp.name" value="${project.prefix}${token.webapp.name.suffix}" />
+
+	<property name="dist.dir" value="${base.dir}/${ear.project.name}/dist" />
+	<property name="build.dir" value="${dist.dir}/temp" />
+	
+	<target name="aps.external">
+		<echo>start to build APS External...</echo>
+		
+		<property name="ear.name" value="${project.prefix}Ear" />
+		<property name="jar.name" value="${project.prefix}Service" />
+		<property name="war.name" value="${project.prefix}Web" />
+		
+		<antcall target="prepare-package" inheritall="true">
+			<param name="jar.name" value="${jar.name}" />
+			<param name="war.name" value="${war.name}" />
+			<param name="filter.web" value="${filter.web}"/>
+		</antcall>
+
+		<antcall target="replace-settings" inheritall="true">
+			<param name="replace.webapp.name" value="${replace.webapp.name}" />
+			<param name="replace.webapp.description" value="${token.webapp.description}" />
+			<param name="replace.log4j" value="${token.log4j}" />
+		</antcall>	    	
+
+		<copy file="${base.dir}/${web.project.name}/${replace.loginpage.external}" 
+			tofile="${build.dir}/${war.name}/${token.loginpage}" verbose="true" overwrite="true"/>
+
+		<copy file="${base.dir}/${web.project.name}/${replace.spring.security.external}" 
+			tofile="${build.dir}/${war.name}/${token.spring.security}" verbose="true" overwrite="true"/>
+		
+		<antcall target="generate-ear" inheritall="true">
+			<param name="war.name" value="${war.name}" />
+			<param name="ear.name" value="${ear.name}" />
+			<param name="replace.project.prefix" value="${replace.project.prefix.external}" />
+		</antcall>
+	</target>
+	
+	<target name="aps.internal">
+		<echo>start to build APS Internal...</echo>
+		
+		<property name="ear.name" value="${project.prefix}IntEar" />
+		<property name="jar.name" value="${project.prefix}IntService" />
+		<property name="war.name" value="${project.prefix}IntWeb" />
+		
+		<antcall target="prepare-package" inheritall="true">
+			<param name="jar.name" value="${jar.name}" />
+			<param name="war.name" value="${war.name}" />
+			<param name="filter.web" value="${filter.web}"/>
+		</antcall>
+
+		<antcall target="replace-settings" inheritall="true">
+			<param name="replace.webapp.name" value="${replace.webapp.name.internal}" />
+			<param name="replace.webapp.description" value="${replace.webapp.description.internal}" />
+			<param name="replace.log4j" value="${replace.log4j.internal}" />
+		</antcall>
+		
+		<copy file="${base.dir}/${web.project.name}/${replace.loginpage.internal}" 
+			tofile="${build.dir}/${war.name}/${token.loginpage}" verbose="true" overwrite="true"/>
+
+		<copy file="${base.dir}/${web.project.name}/${replace.spring.security.internal}" 
+			tofile="${build.dir}/${war.name}/${token.spring.security}" verbose="true" overwrite="true"/>
+		
+		<antcall target="generate-ear" inheritall="true">
+			<param name="war.name" value="${war.name}" />
+			<param name="ear.name" value="${ear.name}" />
+			<param name="replace.project.prefix" value="${replace.project.prefix.internal}" />
+		</antcall>		
+	</target>
+	
+	<target name="all" description="Generate Deployment Ears" depends="clean, init">
+		<antcall target="build-java-project">
+			<param name="project.name" value="${service.project.name}" />
+		</antcall>
+		<antcall target="build-web-project">
+			<param name="project.name" value="${web.project.name}" />
+		</antcall>
+		<antcall target="aps.external"></antcall>
+		<antcall target="aps.internal"></antcall>
+	</target>
+	
+	<target name="generate-aps-external-package" description="Generate APS External Ear" depends="clean, init">
+		<antcall target="build-java-project">
+			<param name="project.name" value="${service.project.name}" />
+		</antcall>
+		<antcall target="build-web-project">
+			<param name="project.name" value="${web.project.name}" />
+		</antcall>
+		<antcall target="aps.external"></antcall>
+	</target>
+	
+	<target name="generate-aps-internal-package" description="Generate APS Internal Ear" depends="clean, init">
+		<antcall target="build-java-project">
+			<param name="project.name" value="${service.project.name}" />
+		</antcall>
+		<antcall target="build-web-project">
+			<param name="project.name" value="${web.project.name}" />
+		</antcall>
+		<antcall target="aps.internal"></antcall>
+	</target>
+	
+</project>

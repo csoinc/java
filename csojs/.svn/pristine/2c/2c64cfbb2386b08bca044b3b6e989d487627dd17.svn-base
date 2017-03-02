@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html data-ng-app="demoApp" >
+<head>
+<meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script>
+
+	var demoApp = angular.module('demoApp', []);
+
+	demoApp.controller('SimpleController', function($scope) {
+		$scope.customers = [
+		 					{name: 'John Smith', city: 'Phoenix'},	           
+		 					{name: 'John Doe', city: 'New York'},	           
+		 					{name: 'Owen Ouyang', city: 'Toronto'},	           
+		 					{name: 'Jane Doe', city: 'San Francisco'}	           
+		                    ];		
+	});
+	
+	$scope.addCustomer = function() {
+		$scope.cutomers.push(
+			{
+				name: $scope.mewCustomer.name,
+				city: $scoper.newCustomer.city
+			});
+	};
+	
+	demoApp.config(function($routeProvider)) {
+		$routeProvider
+		.when('/view1',
+			{
+				controller: 'SimpleController',
+				templateUrl: 'Partials/View1.html'
+			})
+		.when('/view2',
+			{
+				controller: 'SimpleController',
+				templateUrl: 'Partials/View2.html'
+			})
+		.otherwise({redirectTo: '/view1'});	
+
+	});
+
+</script>
+<title>Angular JS</title>
+</head>
+<body data-ng-init="names=['John Smith', 'John Doe', 'Jane Doe']">
+	<div>
+		<div data-ng-view=""></div>
+	</div>	
+
+	<button data-ng-click="addCustomer()">Add Customer</button><br />
+
+	<a href="#/view2">View 2</a>
+</body>
+</html>

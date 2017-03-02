@@ -1,0 +1,7 @@
+prod.jdbcUrl=jdbc:mysql://localhost:3306/inventory
+prod.jdbcDriver=com.mysql.jdbc.Driver
+prod.userId=inventory
+prod.password=longxia1!
+prod.schema=inventory
+prod.createDataSourceEnabled=false
+prod.dataSourceName=jdbc/inventory

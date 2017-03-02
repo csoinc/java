@@ -1,0 +1,13 @@
+package com.oyou.jsf2spring3.mybatis.data;
+
+import com.oyou.jsf2spring3.entity.Employee;
+
+public interface EmployeeMapper {
+    
+    Employee selectEmployee(int id);
+    Employee selectPerson(int id);
+    void insertEmployee(Employee employee);
+    void updateEmployee(Employee employee);
+    void deleteEmployee(int id);
+
+}

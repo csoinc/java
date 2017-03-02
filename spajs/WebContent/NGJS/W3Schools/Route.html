@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+<body ng-app="myApp">
+
+	<p>
+		<a href="#/">Main</a>
+	</p>
+
+	<a href="#london">City London</a>
+	<a href="#paris">City Paris</a>
+
+	<p>Click on the links.</p>
+
+	<p>Note that each "view" has its own controller which each gives the "msg" variable a value.</p>
+
+	<div ng-view></div>
+
+	<script>
+		var app = angular.module("myApp", [ "ngRoute" ]);
+		app.config(function($routeProvider) {
+			$routeProvider.when("/", { templateUrl : "RouteMain.html", })
+			.when("/london", { templateUrl : "RouteLondon.html", controller : "londonCtrl" })
+			.when("/paris", { templateUrl : "RouteParis.html", controller : "parisCtrl" });
+		});
+		app.controller("londonCtrl", function($scope) {
+			$scope.msg = "I love London";
+		});
+		app.controller("parisCtrl", function($scope) {
+			$scope.msg = "I love Paris";
+		});
+	</script>
+
+</body>
+</html>

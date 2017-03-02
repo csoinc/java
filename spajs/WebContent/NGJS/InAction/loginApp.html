@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="loginApp">
+<head>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script>
+	var loginApp = angular.module('loginApp', []);
+
+	loginApp.controller('loginCtrl', function($scope) {
+
+		$http.get('localhost:8090').success(function(status) {
+			$scope.status = 'You are ' + (res.loggedIn ? '' : 'not ') + 'logged in';
+		});
+
+		$scope.user = {};
+		$scope.login = function(user) {
+			$http.post('login', $scope.user).success(function(res) {
+				$scope.status = 'You are ' + (res.loggedIn ? '' : 'not ') + 'logged in';
+				if (res.loggedIn) {
+					$cookieStore.put('sessionToken', res.token);
+				}
+			});
+		};
+
+	});
+</script>
+
+</head>
+<body>
+	<div ng-controller="loginCtrl">
+		<p>{{status}}</p>
+
+		<form ng-submit="login(user)">
+			<p>
+				User: <input ng-model="user.name">
+			</p>
+			<p>
+				Password: <input type="password" ng model="user.password">
+			</p>
+			<input type="submit" value="Login">
+		</form>
+
+	</div>
+</body>
+</html>

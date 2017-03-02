@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<style>
+input.ng-invalid {
+	background-color: lightblue;
+}
+</style>
+<body>
+
+	<div ng-app="myApp" ng-controller="myCtrl">
+		Name: <input ng-model="name">
+		<h1>You entered: {{name}}</h1>
+
+		<form name="myForm" ng-init="myText = 'post@myweb.com'">
+			Email: <input type="email" name="myAddress" ng-model="myText" required>
+			<h1>Status</h1>
+			{{myForm.myAddress.$valid}} {{myForm.myAddress.$dirty}} {{myForm.myAddress.$touched}} <span ng-show="myForm.myAddress.$error.email">:
+				Not a valid e-mail address</span>
+		</form>
+	</div>
+
+	<script>
+		var app = angular.module('myApp', []);
+		app.controller('myCtrl', function($scope) {
+			$scope.name = "John Doe";
+		});
+	</script>
+
+	<p>Use the ng-model directive to bind the value of the input field to a property made in the controller.</p>
+
+
+	<p>Enter your e-mail address in the input field. AngularJS will display an error message if the address is not an e-mail.</p>
+</body>
+</html>
