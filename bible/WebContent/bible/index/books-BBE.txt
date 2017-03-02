@@ -1,0 +1,66 @@
+0 1 1 Gen Genesis
+0 2 2 Exo Exodus
+0 3 3 Lev Leviticus
+0 4 4 Num Numbers
+0 5 5 Deu Deuteronomy
+0 6 6 Jos Joshua
+0 7 7 Jug Judges
+0 8 8 Rut Ruth
+0 9 9 1Sa 1st Samuel
+0 10 10 2Sa 2nd Samuel
+0 11 11 1Ki 1st Kings
+0 12 12 2Ki 2nd Kings
+0 13 13 1Ch 1st Chronicles
+0 14 14 2Ch 2nd Chronicles
+0 15 15 Ezr Ezra
+0 16 16 Neh Nehemiah
+0 17 17 Est Esther
+0 18 18 Job Job
+0 19 19 Psm Psalms
+0 20 20 Pro Proverbs
+0 21 21 Ecc Ecclesiastes
+0 22 22 Son Song of Solomon
+0 23 23 Isa Isaiah
+0 24 24 Jer Jeremiah
+0 25 25 Lam Lamentations
+0 26 26 Eze Ezekiel
+0 27 27 Dan Daniel
+0 28 28 Hos Hosea
+0 29 29 Joe Joel
+0 30 30 Amo Amos
+0 31 31 Oba Obadiah
+0 32 32 Jon Jonah
+0 33 33 Mic Micah
+0 34 34 Nah Nahum
+0 35 35 Hab Habakkuk
+0 36 36 Zep Zephaniah
+0 37 37 Hag Haggai
+0 38 38 Zec Zechariah
+0 39 39 Mal Malachi
+1 40 1 Mat Matthew
+1 41 2 Mak Mark
+1 42 3 Luk Luke
+1 43 4 Jhn John
+1 44 5 Act Acts
+1 45 6 Rom Romans
+1 46 7 1Co 1st Corinthians
+1 47 8 2Co 2nd Corinthians
+1 48 9 Gal Galatians
+1 49 10 Eph Ephesians
+1 50 11 Phl Philippians
+1 51 12 Col Colossians
+1 52 13 1Ts 1st Thessalonians
+1 53 14 2Ts 2nd Thessalonians
+1 54 15 1Ti 1st Timothy
+1 55 16 2Ti 2nd Timothy
+1 56 17 Tit Titus
+1 57 18 Phm Philemon
+1 58 19 Heb Hebrews
+1 59 20 Jas James
+1 60 21 1Pe 1st Peter
+1 61 22 2Pe 2nd Peter
+1 62 23 1Jn 1st John
+1 63 24 2Jn 2nd John
+1 64 25 3Jn 3rd John
+1 65 26 Jud Jude
+1 66 27 Rev Revelation

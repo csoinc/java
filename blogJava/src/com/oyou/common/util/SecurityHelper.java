@@ -10,7 +10,7 @@ import org.apache.commons.logging.LogFactory;
 public class SecurityHelper {
 	private static final Log log = LogFactory.getLog(SecurityHelper.class);
 
-	public static String getMD5Hash(String value) {
+	private static String getMD5Hash(String value) {
 		String result = "";
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");
@@ -31,7 +31,7 @@ public class SecurityHelper {
 		return result;
 	}
 
-	public static char scramble(char kChar, char pChar, int idx) {
+	private static char scramble(char kChar, char pChar, int idx) {
 		int kVal = kChar;
 		int pVal = pChar;
 		double d1 = kVal * 1.7 + pVal * idx * 3.79;

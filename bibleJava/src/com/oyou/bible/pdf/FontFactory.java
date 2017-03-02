@@ -79,7 +79,7 @@ public class FontFactory {
 		Font font = null;
 		try {
 			BaseFont bf = BaseFont.createFont(TW_FONTS, TW_CMAP, BaseFont.NOT_EMBEDDED);
-			font = new Font(bf, 24);
+			font = new Font(bf, 48);
 		} catch (IOException ioe) {
 			log.error(ioe.getMessage());
 		} catch (DocumentException de) {
@@ -131,7 +131,7 @@ public class FontFactory {
 		Font font = null;
 		try {
 			BaseFont bf = BaseFont.createFont(BaseFont.TIMES_ROMAN, BaseFont.CP1252, BaseFont.EMBEDDED);
-			font = new Font(bf, 24);
+			font = new Font(bf, 40);
 		} catch (IOException ioe) {
 			log.error(ioe.getMessage());
 		} catch (DocumentException de) {
@@ -183,7 +183,7 @@ public class FontFactory {
 		Font font = null;
 		try {
 			BaseFont bf = BaseFont.createFont(CN_FONTS, CN_CMAP, BaseFont.NOT_EMBEDDED);
-			font = new Font(bf, 24);
+			font = new Font(bf, 46);
 		} catch (IOException ioe) {
 			log.error(ioe.getMessage());
 		} catch (DocumentException de) {

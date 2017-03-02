@@ -7,7 +7,7 @@
 
 <h3>Site Links</h3>
 <ul>
-<li><a href="https://together.blogsite.org">BetterTogether</a></li>
-<li><a href="https://oyou.blogsite.org">Knowledgebase</a></li>
+<li><a href="#">BetterTogether</a></li>
+<li><a href="#">Knowledgebase</a></li>
 <li><a href="./index.do">Bible</a></li>
 </ul>

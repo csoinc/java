@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -16,7 +15,6 @@ import org.apache.struts.action.ActionMessage;
 import org.apache.struts.action.ActionMessages;
 import org.springframework.web.context.WebApplicationContext;
 
-import com.oyou.common.exception.BusinessException;
 import com.oyou.common.spring.SpringProcessor;
 import com.oyou.common.spring.SpringService;
 import com.oyou.common.util.StringHelper;
@@ -25,13 +23,15 @@ import com.oyou.domain.blog.orm.BlogUser;
 import com.oyou.domain.blog.orm.BlogUserType;
 import com.oyou.web.blog.util.StrutsHelper;
 
+import edu.yale.its.tp.cas.client.filter.CASFilter;
+
 public class StrutsRequestProcessor extends SpringProcessor {
 	private static final Log log = LogFactory.getLog(StrutsRequestProcessor.class);
 	public static boolean SYSTEM_DEBUG_MODE = false;
 	private static String[] logonRequiredPaths = { "password", "profile", "message", "replyMessage", "sqlCommander",
 			"emailGroup", "blogSearch", "bibleSearch", "bibleList", "bibleTree", "Many" };
-	private static String[] logonNotRequiredPaths = { "group", "logout", "login", "language", "register", "forgotPassword",
-			"citySuggests", "provinceSuggests", "countrySuggests" };
+	private static String[] logonNotRequiredPaths = { "group", "logout", "login", "language", "register",
+			"forgotPassword", "citySuggests", "provinceSuggests", "countrySuggests" };
 	private String LOGON_PAGE = "/tiles/security/login.jsp";
 
 	public StrutsRequestProcessor() {
@@ -41,94 +41,64 @@ public class StrutsRequestProcessor extends SpringProcessor {
 	protected boolean processRoles(HttpServletRequest request, HttpServletResponse response, ActionMapping mapping)
 			throws IOException, ServletException {
 		log.info(">>processRoles()");
+		boolean isOKRole = false;
 		String pathInfo = request.getRequestURI();
 		log.debug("==PathInfo: " + pathInfo);
 		if (this.isLogonRequired(pathInfo)) {
+
 			ActionMessages messages = new ActionMessages();
 			BlogUser user = StrutsHelper.getBlogUser(request);
 			if (user == null) {
-				try {
-					String luid = "", lupwd = "";
-					Cookie[] cookies = request.getCookies();
-					if (cookies != null) {
-						for (int i = 0; i < cookies.length; i++) {
-							Cookie cookie = cookies[i];
-							if (StrutsHelper.COOKIE_LOGIN_USER_ID.equals(cookie.getName())) {
-								luid = cookie.getValue().trim();
-								log.info("== Get luid: " + luid);
-								break;
-							} 
-						}
-						for (int i = 0; i < cookies.length; i++) {
-							Cookie cookie = cookies[i];
-							if (StrutsHelper.COOKIE_LOGIN_USER_PWD.equals(cookie.getName())) {
-								lupwd = cookie.getValue().trim();
-								log.info("== Get lupwd: " + lupwd);
-								break;
-							}
-						}
-					}
-					if (StringHelper.isNotEmpty(luid) && StringHelper.isNotEmpty(lupwd)) {
-						user = this.getUserService().login(luid, lupwd, request.getRemoteAddr());
-					}
-					// default guest login solution start
-					if (user == null) {
-						user = this.getUserService().login("guest", "guest", request.getRemoteAddr());
-					}
-				} catch (BusinessException be) {
+				String loginName = (String) request.getSession().getAttribute(CASFilter.CAS_FILTER_USER);
+
+				if (StringHelper.isNotEmpty(loginName)) {
 					try {
-						user = this.getUserService().login("guest", "guest", request.getRemoteAddr());
-					} catch (BusinessException be2) {
-						log.info("<<processRoles(): Guest login false");
-						messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("message.login.required"));
-						StrutsHelper.setPathInfo(request, this.getLogonRequiredAction(pathInfo));
-						showLogonPage(request, response, messages);
-						return false;
+						user = this.getUserService().login(loginName);
+					} catch (Exception e) {
+						isOKRole = false;
 					}
-				} finally {
-					if (user != null)
-						StrutsHelper.setBlogUser(request, user);
 				}
 			}
-			if (user != null) {
-				if (user.getBlogUserStatistic() != null) {
-					messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("message.login.viewed", user.getNickname(),
-							user.getBlogUserStatistic().getViewTimes()));
-				} else {
-					messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("message.login.viewed", user.getNickname(), 0));
-				}
-				request.setAttribute(Globals.MESSAGE_KEY, messages);
-				String[] roles = mapping.getRoleNames();
-				if (roles != null && roles.length > 0) {
-					Long uType = user.getBlogUserType().getId();
-					for (int i = 0; i < roles.length; i++) {
-						Long type = BlogUserType.getTypeFromRole(roles[i]);
-						log.debug("==Role: " + type.toString());
-						if (uType != null && uType.equals(type)) {
-							log.info("<<processRoles(): user role OK");
-							return true;
-						}
-					}
-				} else {
-					log.info("<<processRoles(): login OK");
-					return true;
-				}
-				log.info("<<processRoles(): user role false");
-				messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("error.function.authority"));
-				StrutsHelper.setPathInfo(request, this.getLogonRequiredAction(pathInfo));
-				showLogonPage(request, response, messages);
-				return false;
+
+			StrutsHelper.setBlogUser(request, user);
+			if (user.getBlogUserStatistic() != null) {
+				messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("message.login.viewed",
+						user.getNickname(), user.getBlogUserStatistic().getViewTimes()));
 			} else {
-				log.info("<<processRoles(): login false");
-				messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("message.login.required"));
-				StrutsHelper.setPathInfo(request, this.getLogonRequiredAction(pathInfo));
-				showLogonPage(request, response, messages);
-				return false;
+				messages.add(ActionMessages.GLOBAL_MESSAGE,
+						new ActionMessage("message.login.viewed", user.getNickname(), 0));
+			}
+			request.setAttribute(Globals.MESSAGE_KEY, messages);
+			String[] roles = mapping.getRoleNames();
+			if (roles != null && roles.length > 0) {
+				Long uType = user.getBlogUserType().getId();
+				for (int i = 0; i < roles.length; i++) {
+					Long type = BlogUserType.getTypeFromRole(roles[i]);
+					log.debug("==Role: " + type.toString());
+					if (uType != null && uType.equals(type)) {
+						log.info("user role is OK for action: " + mapping.getPath());
+						isOKRole = true;
+						break;
+					}
+				}
+			} else {
+				log.info("Without role actions: " + mapping.getPath());
+				isOKRole = true;
 			}
 		} else {
-			log.info("<<processRoles(): path OK");
-			return true;
+			isOKRole = true;
 		}
+		log.info("<<processRoles(): the role is " + isOKRole);
+
+		if (!isOKRole) {
+			ActionMessages messages = new ActionMessages();
+			log.info("User role false for action: " + mapping.getPath());
+			messages.add(ActionMessages.GLOBAL_MESSAGE, new ActionMessage("error.function.authority"));
+			StrutsHelper.setPathInfo(request, this.getLogonRequiredAction(pathInfo));
+			showLogonPage(request, response, messages);
+
+		}
+		return isOKRole;
 	}
 
 	protected void showLogonPage(HttpServletRequest request, HttpServletResponse response, ActionMessages messages)

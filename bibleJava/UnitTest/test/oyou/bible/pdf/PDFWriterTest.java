@@ -4,6 +4,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 import com.oyou.bible.pdf.BBEPdfFile;
+import com.oyou.bible.pdf.CNBBEKJVPdfFile;
 import com.oyou.bible.pdf.CNBBEPdfFile;
 import com.oyou.bible.pdf.CNPdfFile;
 import com.oyou.bible.pdf.KJVPdfFile;
@@ -21,9 +22,18 @@ public class PDFWriterTest extends JunitTest {
         }	
 		PdfFile file = new CNBBEPdfFile();
 		file.createPdfFile();
-		log.debug("Great HGB-BBE-KJV! Is works!");
+		log.debug("Great HGB-BBE! Is works!");
 	}
 
+	public void ntestCreateCNBBEKJVFile() {
+        if (BibleConstants.getInstance().getRootPath() == null) {
+        	BibleConstants.getInstance().setRootPath("");
+        }	
+		PdfFile file = new CNBBEKJVPdfFile();
+		file.createPdfFile();
+		log.debug("Great HGB-BBE-KJV! Is works!");
+	}
+	
 	public void ntestCreateCNFile() {
         if (BibleConstants.getInstance().getRootPath() == null) {
         	BibleConstants.getInstance().setRootPath("");
@@ -33,7 +43,7 @@ public class PDFWriterTest extends JunitTest {
 		log.debug("Great HGB! Is works!");
 	}
 
-	public void testCreateCNSlideShowFile() {
+	public void ntestCreateCNSlideShowFile() {
         if (BibleConstants.getInstance().getRootPath() == null) {
         	BibleConstants.getInstance().setRootPath("");
         }	
@@ -42,7 +52,7 @@ public class PDFWriterTest extends JunitTest {
 		log.debug("Great HGB Slide Show! Is works!");
 	}
 	
-	public void ntestCreateTWFile() {
+	public void testCreateTWFile() {
         if (BibleConstants.getInstance().getRootPath() == null) {
         	BibleConstants.getInstance().setRootPath("");
         }	
@@ -51,7 +61,7 @@ public class PDFWriterTest extends JunitTest {
 		log.debug("Great HB5! Is works!");
 	}
 
-	public void ntestCreateTWSlideShowFile() {
+	public void testCreateTWSlideShowFile() {
         if (BibleConstants.getInstance().getRootPath() == null) {
         	BibleConstants.getInstance().setRootPath("");
         }	

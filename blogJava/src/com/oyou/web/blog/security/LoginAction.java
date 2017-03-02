@@ -29,7 +29,7 @@ public class LoginAction extends UserAction {
 		if (user != null) {
 			getUserService().increaseUserUpdateTimes(user.getId());
 			StrutsHelper.setBlogUser(request, user);
-			StrutsHelper.setBlogUserCookie(response, user, getUserService().getSiteDomain());
+			//StrutsHelper.setBlogUserCookie(response, user, getUserService().getSiteDomain());
 			ActionMessage message = new ActionMessage("message.login.confirmed");
 			messages.add(ActionMessages.GLOBAL_MESSAGE, message);
 			request.setAttribute(Globals.MESSAGE_KEY, messages);

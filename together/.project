@@ -4,7 +4,7 @@
 	<comment></comment>
 	<projects>
 		<project>blogJava</project>
-		<project>gwt15Java</project>
+		<project>gwtJava</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

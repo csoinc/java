@@ -1,0 +1,143 @@
+Reachable types computed on: Sat Oct 09 20:06:21 EDT 2010
+com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException
+   Serialization status
+      Instantiable
+   Path
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+com.google.gwt.user.client.rpc.SerializableException
+   Serialization status
+      Field serializable
+   Path
+      'com.google.gwt.user.client.rpc.SerializableException' is reachable as a supertype of type 'class com.oyou.gwt.blog.client.BlogException'
+      'com.oyou.gwt.blog.client.BlogException' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.BlogException'
+      Started from 'com.oyou.gwt.blog.client.BlogException'
+
+com.oyou.gwt.blog.client.BlogException
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.BlogException' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.BlogException'
+      Started from 'com.oyou.gwt.blog.client.BlogException'
+
+com.oyou.gwt.blog.client.Entity
+   Serialization status
+      Field serializable
+   Path
+      'com.oyou.gwt.blog.client.Entity' is reachable as a supertype of type 'class com.oyou.gwt.blog.client.IsGroup'
+      'com.oyou.gwt.blog.client.IsGroup' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsGroup'
+      Type 'com.oyou.gwt.blog.client.IsGroup' is reachable from array type 'com.oyou.gwt.blog.client.IsGroup[]'
+      Started from 'com.oyou.gwt.blog.client.IsGroup[]'
+
+com.oyou.gwt.blog.client.IsArticle
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.IsArticle' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsArticle'
+      Type 'com.oyou.gwt.blog.client.IsArticle' is reachable from array type 'com.oyou.gwt.blog.client.IsArticle[]'
+      Started from 'com.oyou.gwt.blog.client.IsArticle[]'
+
+com.oyou.gwt.blog.client.IsArticle[]
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.oyou.gwt.blog.client.IsArticle[]'
+
+com.oyou.gwt.blog.client.IsComment
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.IsComment' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsComment'
+      Type 'com.oyou.gwt.blog.client.IsComment' is reachable from array type 'com.oyou.gwt.blog.client.IsComment[]'
+      Started from 'com.oyou.gwt.blog.client.IsComment[]'
+
+com.oyou.gwt.blog.client.IsComment[]
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.oyou.gwt.blog.client.IsComment[]'
+
+com.oyou.gwt.blog.client.IsErrorCode
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.IsErrorCode' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsErrorCode'
+      Started from 'com.oyou.gwt.blog.client.IsErrorCode'
+
+com.oyou.gwt.blog.client.IsGroup
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.IsGroup' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsGroup'
+      Type 'com.oyou.gwt.blog.client.IsGroup' is reachable from array type 'com.oyou.gwt.blog.client.IsGroup[]'
+      Started from 'com.oyou.gwt.blog.client.IsGroup[]'
+
+com.oyou.gwt.blog.client.IsGroupType
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.IsGroupType' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsGroupType'
+      Type 'com.oyou.gwt.blog.client.IsGroupType' is reachable from array type 'com.oyou.gwt.blog.client.IsGroupType[]'
+      Started from 'com.oyou.gwt.blog.client.IsGroupType[]'
+
+com.oyou.gwt.blog.client.IsGroupType[]
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.oyou.gwt.blog.client.IsGroupType[]'
+
+com.oyou.gwt.blog.client.IsGroup[]
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.oyou.gwt.blog.client.IsGroup[]'
+
+com.oyou.gwt.blog.client.IsPicture
+   Serialization status
+      Instantiable
+   Path
+      'com.oyou.gwt.blog.client.IsPicture' is reachable as a subtype of type 'class com.oyou.gwt.blog.client.IsPicture'
+      Type 'com.oyou.gwt.blog.client.IsPicture' is reachable from array type 'com.oyou.gwt.blog.client.IsPicture[]'
+      Started from 'com.oyou.gwt.blog.client.IsPicture[]'
+
+com.oyou.gwt.blog.client.IsPicture[]
+   Serialization status
+      Instantiable
+   Path
+      Started from 'com.oyou.gwt.blog.client.IsPicture[]'
+
+java.lang.Exception
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.RuntimeException
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+
+java.lang.String
+   Serialization status
+      Instantiable
+   Path
+      'java.lang.String' is reachable as a subtype of type 'class java.lang.String'
+      Started from 'java.lang.String'
+
+java.lang.Throwable
+   Serialization status
+      Field serializable
+   Path
+      'java.lang.Throwable' is reachable as a supertype of type 'class java.lang.Exception'
+      'java.lang.Exception' is reachable as a supertype of type 'class java.lang.RuntimeException'
+      'java.lang.RuntimeException' is reachable as a supertype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException' is reachable as a subtype of type 'class com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+      Started from 'com.google.gwt.user.client.rpc.IncompatibleRemoteServiceException'
+

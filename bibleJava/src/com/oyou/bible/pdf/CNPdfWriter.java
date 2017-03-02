@@ -3,6 +3,10 @@ package com.oyou.bible.pdf;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Vector;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import com.lowagie.text.Chapter;
 import com.lowagie.text.Chunk;
 import com.lowagie.text.DocumentException;
@@ -19,6 +23,8 @@ import com.oyou.bible.reader.LineReader;
 import com.oyou.bible.util.BibleConstants;
 
 public class CNPdfWriter extends PdfGenericWriter {
+	protected static final Log log = LogFactory.getLog(CNPdfWriter.class);
+	
 	protected Vector<Line> lines = new Vector<Line>();
 	protected Hashtable<String, Book> books = new Hashtable<String, Book>();
 

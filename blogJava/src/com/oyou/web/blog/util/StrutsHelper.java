@@ -34,15 +34,15 @@ public class StrutsHelper extends com.oyou.web.util.StrutsHelper {
 		}
 	}
 
-	public static void setBlogUserCookie(HttpServletResponse response, BlogUser user, String siteDomain) {
+	private static void setBlogUserCookie(HttpServletResponse response, BlogUser user, String siteDomain) {
 		if (user != null) {
 			Cookie luid = new Cookie(COOKIE_LOGIN_USER_ID, user.getLoginName());
-			luid.setDomain("blogsite.org");
+			luid.setDomain("localhost");
 			//luid.setPath("/");
 			luid.setMaxAge(SECONDS_PER_MONTH);
 			
 			Cookie lupwd = new Cookie(COOKIE_LOGIN_USER_PWD, user.getLoginPassword());
-			lupwd.setDomain("blogsite.org");
+			lupwd.setDomain("localhost");
 			//lupwd.setPath("/");
 			lupwd.setMaxAge(SECONDS_PER_MONTH);
 	

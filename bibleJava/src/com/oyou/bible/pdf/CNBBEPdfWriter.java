@@ -3,6 +3,10 @@ package com.oyou.bible.pdf;
 import java.util.Hashtable;
 import java.util.Iterator;
 import java.util.Vector;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import com.lowagie.text.Chapter;
 import com.lowagie.text.Chunk;
 import com.lowagie.text.DocumentException;
@@ -15,17 +19,18 @@ import com.oyou.bible.model.Line;
 import com.oyou.bible.reader.BBEBooksReader;
 import com.oyou.bible.reader.BBELinesReader;
 import com.oyou.bible.reader.BookReader;
-import com.oyou.bible.reader.KJVLinesReader;
 import com.oyou.bible.reader.LineReader;
 import com.oyou.bible.util.BibleConstants;
 import com.oyou.common.util.DebugHelper;
 
 public class CNBBEPdfWriter extends CNPdfWriter {
+	protected static final Log log = LogFactory.getLog(CNBBEPdfWriter.class);
+	
 	protected Hashtable<String, Book> bbeBooks = new Hashtable<String, Book>();
 	protected Hashtable<String, Line> bbeLines = new Hashtable<String, Line>();
-	protected Hashtable<String, Line> kjvLines = new Hashtable<String, Line>();
+	//protected Hashtable<String, Line> kjvLines = new Hashtable<String, Line>();
 	private static final String BBE = "[bbe]";
-	private static final String KJV = "[kjv]";
+	//private static final String KJV = "[kjv]";
 	private static final String HGB = "[hgb]";
 	
 	public CNBBEPdfWriter() {
@@ -51,7 +56,7 @@ public class CNBBEPdfWriter extends CNPdfWriter {
 		Iterator it = lines.iterator();
 		CNLine line = null;
 		Line bbeLine = null;
-		Line kjvLine = null;
+		//Line kjvLine = null;
 		CNBook book = null;
 		Book bbeBook = null;
 		String savedBook = "";
@@ -71,10 +76,10 @@ public class CNBBEPdfWriter extends CNPdfWriter {
 			if (bbeLine == null) {
 				log.error("bbeLine is null " + DebugHelper.getJSONString(line));
 			}
-			kjvLine = (Line) kjvLines.get(line.getKey());
-			if (kjvLine == null) {
-				log.error("kjvLine is null " + DebugHelper.getJSONString(line));
-			}
+//			kjvLine = (Line) kjvLines.get(line.getKey());
+//			if (kjvLine == null) {
+//				log.error("kjvLine is null " + DebugHelper.getJSONString(line));
+//			}
 			currentBook = line.getBook();
 			currentChapter = line.getChapter();
 			currentMode = this.isSectionBook(currentBook);
@@ -124,10 +129,10 @@ public class CNBBEPdfWriter extends CNPdfWriter {
 						pdfContent = new Paragraph(bbeLine.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + bbeLine.getSection() + BBE + " " + bbeLine.getContent(), font12);
 						pdfChapter.add(pdfContent);
 					}
-					if (kjvLine != null) {
-						pdfContent = new Paragraph(kjvLine.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + kjvLine.getSection() + KJV + " " + kjvLine.getContent(), font12);
-						pdfChapter.add(pdfContent);
-					}
+//					if (kjvLine != null) {
+//						pdfContent = new Paragraph(kjvLine.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + kjvLine.getSection() + KJV + " " + kjvLine.getContent(), font12);
+//						pdfChapter.add(pdfContent);
+//					}
 					pdfContent = new Paragraph(line.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + line.getSection() + HGB + " " + line.getContent(), font12);
 					pdfChapter.add(pdfContent);
 				}
@@ -155,10 +160,10 @@ public class CNBBEPdfWriter extends CNPdfWriter {
 						pdfContent = new Paragraph(bbeLine.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + bbeLine.getSection() + BBE + " " + bbeLine.getContent(), font12);
 						pdfChapter.add(pdfContent);
 					}
-					if (kjvLine != null) {
-						pdfContent = new Paragraph(kjvLine.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + kjvLine.getSection() + KJV + " " + kjvLine.getContent(), font12);
-						pdfChapter.add(pdfContent);
-					}
+//					if (kjvLine != null) {
+//						pdfContent = new Paragraph(kjvLine.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + kjvLine.getSection() + KJV + " " + kjvLine.getContent(), font12);
+//						pdfChapter.add(pdfContent);
+//					}
 					pdfContent = new Paragraph(line.getChapter() + BibleConstants.getInstance().CHAPTER_SECTION_SEPARATOR + line.getSection() + HGB + " " + line.getContent(), font12);
 					pdfChapter.add(pdfContent);
 				}
@@ -198,15 +203,15 @@ public class CNBBEPdfWriter extends CNPdfWriter {
 			bbeLines.put(line.getKey(), line);
 		}
 		//2. load kjv
-		lineReader = new KJVLinesReader();
-		tmpLines.clear();
-		tmpLines.addAll(this.loadLines(lineReader));
-		lineReader.close();
-		it = tmpLines.iterator();
-		while (it.hasNext()) {
-			Line line = (Line)it.next();
-			kjvLines.put(line.getKey(), line);
-		}
+//		lineReader = new KJVLinesReader();
+//		tmpLines.clear();
+//		tmpLines.addAll(this.loadLines(lineReader));
+//		lineReader.close();
+//		it = tmpLines.iterator();
+//		while (it.hasNext()) {
+//			Line line = (Line)it.next();
+//			kjvLines.put(line.getKey(), line);
+//		}
 	}
 
 }

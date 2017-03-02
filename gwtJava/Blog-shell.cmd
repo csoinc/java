@@ -1,0 +1,2 @@
+@java -cp "%~dp0\src;%~dp0\bin;D:/UserData/Workspaces/CSO/blogger/blogger/WebContent/WEB-INF/lib/log4j-1.2.11.jar;C:/UserApps/Frameworks/gwt-windows-1.5.3/gwt-user.jar;C:/UserApps/Frameworks/gwt-windows-1.5.3/gwt-dev-windows.jar" com.google.gwt.dev.GWTShell -out "D:/UserData/Workspaces/CSO/blogger/gwtJava/scripts" %* com.oyou.gwt.blog.Blog/Blog.html
+pause

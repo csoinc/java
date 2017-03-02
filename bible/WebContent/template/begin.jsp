@@ -4,8 +4,8 @@
 
 <!-- Meta Data -->
 <meta http-equiv="Content-Language" content="text/html; charset=UTF-8">
-<meta name="Keywords" content="OYOU Bible Search Listing">
-<meta name="description" content="OYOU Bible search listing">
+<meta name="Keywords" content="Bible Search Listing">
+<meta name="description" content="Bible search listing">
 <!-- Link to Style External Sheet -->
 <link href="css/style.css" type="text/css" rel="stylesheet" />
 <link href="css/menutab.css" type="text/css" rel="stylesheet" />

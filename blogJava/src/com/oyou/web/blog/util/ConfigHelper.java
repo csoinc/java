@@ -10,4 +10,5 @@ public interface ConfigHelper {
 	String FROM_EMAIL = "from_email";
 	String ADMIN_EMAIL = "admin_email";
 	String ADMIN_NAME = "admin_name";
+	String SSO_LOGOUT = "sso_logout";
 }

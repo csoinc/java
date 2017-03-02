@@ -22,7 +22,7 @@ public class CNPdfFile implements PdfFile {
 
 	public void createPdfSlideShowFile() {
 		CNPdfWriter writer = new CNPdfWriter(
-				BibleConstants.getInstance().getProperty(BibleConstants.CN_PDF_FILE), 
+				BibleConstants.getInstance().getProperty(BibleConstants.CN_SLIDE_PDF_FILE), 
 				BibleConstants.getInstance().PDF_AUTHOR, 
 				BibleConstants.getInstance().getProperty(BibleConstants.CN_IMAGE_FILE), 
 				CNWords.VERSION);

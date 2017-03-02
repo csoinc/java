@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="javaMailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host"><value>smtp.googlemail.com</value></property>
+        <!-- property name="port"><value>465</value></property-->
+        <property name="port"><value>587</value></property>
+        <property name="protocol"><value>smtp</value></property>
+		<property name="username">
+			<value>ouyangqx@gmail.com</value>
+		</property>
+		<property name="password">
+			<value>duochicai1@</value>
+		</property>
+		<property name="defaultEncoding">
+			<value>UTF-8</value>
+		</property>
+		<property name="javaMailProperties">
+			<props>
+				<prop key="mail.smtp.auth">true</prop>
+				<prop key="mail.smtp.starttls.enable">true</prop>
+				<prop key="mail.smtp.quitwait">false</prop>
+				<!-- prop key="mail.smtp.socketFactory.class">javax.net.ssl.SSLSocketFactory</prop-->
+                <!-- prop key="mail.smtp.socketFactory.fallback">false</prop-->
+                <prop key="mail.debug">false</prop>
+				
+			</props>
+		</property>
+	</bean>
+	<bean id="mailMessage" class="org.springframework.mail.SimpleMailMessage">
+		<property name="from">
+			<value>ouyangqx@gmail.com</value>
+		</property>
+		<property name="subject">
+			<value></value>
+		</property>
+	</bean>
+	<bean id="emailManager" class="com.oyou.domain.blog.EmailManagerImpl">
+		<property name="javaMailSender">
+			<ref bean="javaMailSender" />
+		</property>
+		<property name="message">
+			<ref bean="mailMessage" />
+		</property>
+	</bean>
+</beans>

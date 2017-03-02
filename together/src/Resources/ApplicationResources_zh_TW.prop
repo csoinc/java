@@ -1,4 +1,4 @@
-errors.header=The following error(s) occurred：
+errors.header=The following error(s) occurred:
 errors.permission.denied=You don't have the required permission to do this operation.
 errors.required={0} is required.
 errors.minlength={0} cannot be less than {1} characters.
@@ -17,7 +17,7 @@ errors.creditcard={0} is not a valid credit card number.
 errors.email={0} is an invalid e-mail address.
 
 menu.home=主頁
-menu.home.mcbc=同心同行
+menu.home.title=同心同行
 menu.english=English
 menu.chinese=國語
 menu.cantonese=粵語
@@ -42,23 +42,34 @@ menu.hqlQuery.buffer=HQL緩存
 menu.log.buffer=Log
 
 menu.category=類別
-menu.group=團體
-menu.search=信息搜索
+menu.tab.1=Business
+menu.tab.2=Community
+menu.tab.3=Life
+menu.tab.4=Hybris
+menu.tab.5=Java
+menu.tab.6=Programming
+menu.tab.7=Systems
+menu.tab.8=Technology
 menu.album=相冊
-menu.generic=普通
-
-menu.function=工具
-menu.language=語言
-menu.user.email=電郵
-
-menu.blogger=博客
-menu.blogger.album=博客相冊
-menu.blogger.article=博客文集
-menu.blogger.video=博客視頻
 menu.cell=生命小組
 menu.church=教會
 menu.fellowship=團契
+menu.generic=普通
 menu.worship=敬拜
+
+menu.function=工具
+menu.language=語言
+menu.search=信息搜索
+
+menu.user.email=電郵
+
+menu.blogger.album=博客相冊
+menu.blogger.article=博客文集
+menu.blogger.video=博客視頻
+menu.file=File
+
+menu.group=團體
+
 menu.announcement=布告
 menu.aboutus=AboutUS
 menu.help=Help
@@ -68,7 +79,7 @@ head.user.management.title=用戶管理
 head.blog.listing.title=博客
 head.console.admin.title=管理
 
-foot.application.title=由OYOU提供
+foot.application.title=由CSOINC提供
 
 layout.pager.previous=<<
 layout.pager.next=>>
@@ -146,7 +157,7 @@ label.status.option=Status Option
 label.published=Published
 label.private=Private
 
-hint.register.phone.home=416-888-8888
+hint.register.phone.home=***-***-****
 
 button.login=登錄
 button.register=注冊
@@ -178,7 +189,7 @@ popup.question=你真要退出嗎?
 popup.yes=是
 popup.no=否
 
-error.login.fields.required=You must provide both a login name and a password.
+error.login.fields.required=You must provide both a login name or email address and a password.
 error.login.valid.info.required=A valid user name and password combination is required.
 error.password.new.valid=A valid new password is required.
 error.password.confirm.valid=A valid confirmed password is required.
@@ -190,16 +201,17 @@ error.register.email.address=The email address {0} is already taken, please try 
 error.register.login.name.required=You must provide a login name.
 error.register.email.address.required=You must provide a email address.
 error.register.home.phone=You must provide a home phone number.
-error.group.authority=You don't have authority to update this group, select Account -> Register to create an Writer account, or emailto: owen.ou@rogers.com for Editor/Writer permission.
-error.message.authority=You don't have authority to update this message, select Account -> Register to create an Writer account, or emailto: owen.ou@rogers.com for Editor/Writer permission.
+error.group.authority=You don't have authority to update this group, please contact group master.
+error.message.authority=You don't have authority to update this message, please contact message owner.
 error.message.phone.and.email.invalid=Your home phone number and the email address is not exist in our system.
-error.function.authority=You don't have authority to enter this function, please select Account -> Register to create an Writer account, or emailto: owen.ou@rogers.com for Editor/Writer permission.
-error.system=Unknow system error, please emailto: owen.ou@rogers.com for submit the error report.
+error.function.authority=You don't have authority to enter this function, please contact system administrator.
+
+error.system=Unknow system error, please contact system administrator.
 
 message.password.changed=Your password changed successfully.
-message.login.confirmed=You login to the system successfully, please post at least one message per visit.
-message.login.viewed {0}({1}).
-message.login.required=You have to login to the system first, or Account -> Register to create an account, or Tools -> Search with guest/guest login.
+message.login.confirmed=You login to the system successfully.
+message.login.viewed={0}({1}).
+message.login.required=You have to login to the system first, or Account -> Register to create an account.
 message.register.created=Your account profile created successfully, <br>your password has been sent to your email address. 
 message.profile.updated=Your account profile updated successfully.
 message.logout.confirmed=You logout from the system successfully.
@@ -209,14 +221,15 @@ message.group.created=Your group profile created successfully.
 message.message.created=Your message created successfully.
 message.message.reply.created=Your comment message created successfully.
 
-message.sqlcommander.return=Execute script return： {0}.
-message.sqlcommander.empty Execute script is empty.
-message.email.return Your email has been sent successfully.
-message.email.empty Your email is empty.
-message.backup.confirmed {0} table backup was made successfully.
-message.upload.maintain.confirmed Upload files was maintained successfully.
+message.sqlcommander.return=Execute script return: {0}.
+message.sqlcommander.empty=Execute script is empty.
+message.email.return=Your email has been sent successfully.
+message.email.empty=Your email is empty.
+message.backup.confirmed={0} table backup was made successfully.
+message.upload.maintain.confirmed=Upload files was maintained successfully.
 message.upload.deleted.confirmed={0} uploading file was deleted successfully.
 message.upload.created.confirmed={0} uploading file was uploaded successfully.
 
 message.forgot.password.email.confirmed=Your login name and password has been sent to your email address {0}. 
 message.information.updated=Your information updated successfully.
+

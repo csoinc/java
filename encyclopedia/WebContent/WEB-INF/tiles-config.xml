@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 1.1//EN"
+       "http://jakarta.apache.org/struts/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+	<definition name="user.template" path="/template/template.jsp" >
+		<put name="begin" value="begin.jsp" />
+		<put name="title" value="title.jsp" />
+		<put name="top" value="top.jsp" />
+		<put name="end" value="end.jsp" />
+		<put name="left" value="left.jsp" />
+		<put name="right" value="right.jsp" />
+	</definition>
+	<definition name="user.login" extends="user.template">
+		<put name="content" value="/jsps/security/login.jsp" />
+	</definition>
+	<definition name="user.register" extends="user.template">
+		<put name="content" value="/jsps/security/register.jsp" />
+	</definition>
+	<definition name="user.password" extends="user.template">
+		<put name="content" value="/jsps/security/password.jsp" />
+	</definition>
+	<definition name="user.forgotPassword" extends="user.template">
+		<put name="content" value="/jsps/security/forgotPassword.jsp" />
+	</definition>
+	<definition name="user.profile" extends="user.template">
+		<put name="content" value="/jsps/security/profile.jsp" />
+	</definition>
+
+	<!-- 
+	<definition name="group.template" path="/template/template.jsp" >
+		<put name="begin" value="begin.jsp" />
+		<put name="title" value="title.jsp" />
+		<put name="top" value="top.jsp" />
+		<put name="end" value="end.jsp" />
+	</definition>
+	<definition name="group.list" extends="group.template">
+		<put name="content" value="/jsps/bbs/group.jsp" />
+	</definition>
+	 -->
+	 
+</tiles-definitions>

@@ -1,1 +1,0 @@
-@java -version:1.6.0_14 -cp "%~dp0\src;%~dp0\bin;/Framework/gwt-windows-1.5.3/gwt-user.jar;/Framework/gwt-windows-1.5.3/gwt-dev-windows.jar" com.google.gwt.dev.GWTShell -out "%~dp0\www" %* com.oyou.gwt.banner.Banner/Banner.html

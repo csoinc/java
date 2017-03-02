@@ -13,7 +13,7 @@ public class TWPdfFile implements PdfFile {
 				BibleConstants.getInstance().getProperty(BibleConstants.TW_PDF_FILE), 
 				BibleConstants.getInstance().PDF_AUTHOR, 
 				BibleConstants.getInstance().getProperty(BibleConstants.TW_IMAGE_FILE), 
-				TWWords.LICENSED_TO+TWWords.MCBC);
+				TWWords.VERSION);
 		
 		writer.createCover();
 		writer.createContent();
@@ -22,10 +22,10 @@ public class TWPdfFile implements PdfFile {
 
 	public void createPdfSlideShowFile() {
 		TWPdfWriter writer = new TWPdfWriter(
-				BibleConstants.getInstance().getProperty(BibleConstants.TW_PDF_FILE), 
+				BibleConstants.getInstance().getProperty(BibleConstants.TW_SLIDE_PDF_FILE), 
 				BibleConstants.getInstance().PDF_AUTHOR, 
 				BibleConstants.getInstance().getProperty(BibleConstants.TW_IMAGE_FILE), 
-				TWWords.LICENSED_TO+TWWords.MCBC);
+				TWWords.VERSION);
 		
 		writer.createCover();
 		writer.createContentSlideShow();

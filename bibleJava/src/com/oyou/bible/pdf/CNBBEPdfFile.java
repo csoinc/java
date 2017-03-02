@@ -10,10 +10,10 @@ public class CNBBEPdfFile implements PdfFile {
 
 	public void createPdfFile() {
 		CNBBEPdfWriter writer = new CNBBEPdfWriter(
-				BibleConstants.getInstance().getProperty(BibleConstants.CNBBEKJV_PDF_FILE), 
+				BibleConstants.getInstance().getProperty(BibleConstants.CNBBE_PDF_FILE), 
 				BibleConstants.getInstance().PDF_AUTHOR, 
 				BibleConstants.getInstance().getProperty(BibleConstants.CN_IMAGE_FILE), 
-				CNWords.LICENSED_TO+CNWords.MCBC);
+				Words.VERSION + CNWords.VERSION);
 		
 		writer.createCover();
 		writer.createContent();

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+                               "http://struts.apache.org/dtds/struts-config_1_2.dtd">
+<struts-config>
+ <data-sources/>
+ <form-beans>
+  <form-bean name="datagridForm" type="test.oyou.web.layout.DatagridForm"/>
+  <form-bean name="registerForm" type="com.oyou.web.blog.security.RegisterForm"/>
+  <form-bean name="profileForm" type="com.oyou.web.blog.security.ProfileForm"/>
+  <form-bean name="loginForm" type="com.oyou.web.blog.security.LoginForm"/>
+  <form-bean name="logoutForm" type="com.oyou.web.blog.security.LoginForm"/>
+  <form-bean name="passwordForm" type="com.oyou.web.blog.security.PasswordForm"/>
+  <form-bean name="forgotPasswordForm" type="com.oyou.web.blog.security.ForgotPasswordForm"/>
+  <form-bean name="groupForm" type="com.oyou.web.blog.GroupForm"/>
+  <form-bean name="messageForm" type="com.oyou.web.blog.MessageForm"/>
+  <form-bean name="replyMessageForm" type="com.oyou.web.blog.ReplyMessageForm"/>
+  <form-bean name="viewReplyMessageForm" type="com.oyou.web.blog.ViewReplyMessageForm"/>
+  <form-bean name="listingForm" type="com.oyou.web.blog.bible.ListingForm"/>
+  <form-bean name="selectionForm" type="com.oyou.web.blog.bible.SelectionForm"/>
+  <form-bean name="sqlCommanderForm" type="com.oyou.web.blog.console.SQLCommanderForm"/>
+  <form-bean name="hqlForm" type="com.oyou.web.blog.console.HQLForm"/>
+  <form-bean name="userAdminForm" type="com.oyou.web.blog.console.UserAdminForm"/>
+  <form-bean name="emailForm" type="com.oyou.web.blog.console.EmailForm"/>
+  <form-bean name="emailGroupForm" type="com.oyou.web.blog.EmailGroupForm"/>
+  <form-bean name="messageSearchForm" type="com.oyou.web.blog.MessageSearchForm"/>
+  <form-bean name="replyMessageSearchForm" type="com.oyou.web.blog.ReplyMessageSearchForm"/>
+  <form-bean name="informationForm" type="com.oyou.web.blog.console.InformationForm"/>
+ </form-beans>
+ <global-exceptions/>
+ <global-forwards>
+  <forward name="home" path="/index.do" redirect="true"/>
+  <forward name="login" path="user.login"/>
+ </global-forwards>
+ <action-mappings>
+  <action path="/sort" scope="request"
+   type="com.oyou.web.layout.PageSortAction" validate="false"/>
+  <action path="/page" scope="request"
+   type="fr.improve.struts.taglib.layout.sort.PageAction" validate="false"/>
+  <action path="/treeview" scope="request"
+   type="com.oyou.web.layout.MenuTreeAction" validate="false"/>
+  <action path="/default" scope="request"
+   type="fr.improve.struts.taglib.layout.util.DefaultAction" validate="false">
+   <forward name="index" path="/tiles/security/login.jsp"/>
+  </action>
+  <action name="datagridForm" parameter="reqCode" path="/datagrid"
+   scope="session" type="test.oyosoft.web.layout.DatagridAction" validate="false">
+   <forward name="success" path="/jsps/bible/bookDatagrid.jsp"/>
+  </action>
+  <action path="/bookSuggests" type="org.springframework.web.struts.DelegatingActionProxy"/>
+  <action parameter="reqCode" path="/language" scope="request" type="com.oyou.web.struts.LanguageAction" validate="false">
+    <forward name="success" path="/group.do" redirect="true"/>
+  </action>
+  <action parameter="reqCode" path="/index" scope="request" type="com.oyou.web.struts.LanguageAction" validate="false">
+    <forward name="success" path="/group.do" redirect="true"/>
+  </action>
+  <action input="/tiles/security/register.jsp" name="registerForm" parameter="reqCode"
+   path="/register" scope="session"
+   type="com.oyou.web.blog.security.RegisterAction" validate="true">
+   <forward name="success" path="/tiles/security/register.jsp"/>
+   <forward name="failed" path="/tiles/security/register.jsp"/>
+  </action>
+  <action input="user.login" name="loginForm" parameter="reqCode"
+   path="/login" scope="request"
+   type="com.oyou.web.blog.security.LoginAction" validate="true">
+   <forward name="success" path="user.login"/>
+   <forward name="failed" path="user.login"/>
+   <forward name="group" path="/group.do" redirect="true"/>
+   <forward name="message" path="/group.do" redirect="true"/>
+   <forward name="replyMessage" path="/group.do" redirect="true"/>
+   <forward name="blogSearch" path="/blogSearch.do" redirect="true"/>
+   <forward name="password" path="/password.do" redirect="true"/>
+   <forward name="profile" path="/profile.do" redirect="true"/>
+   <forward name="sqlCommander" path="/sqlCommander.do" redirect="true"/>
+   <forward name="bibleList" path="/bibleList.do" redirect="true"/>
+   <forward name="bibleSearch" path="/bibleSearch.do" redirect="true"/>
+   <forward name="bibleTree" path="/bibleTree.do" redirect="true"/>
+  </action>
+  <action input="user.password" name="passwordForm" parameter="reqCode"
+   path="/password" scope="session"
+   type="com.oyou.web.blog.security.PasswordAction" validate="true">
+   <forward name="success" path="user.password"/>
+   <forward name="failed" path="user.password"/>
+   <forward name="group" path="/group.do" redirect="true"/>
+   <forward name="blogSearch" path="/blogSearch.do" redirect="true"/>
+  </action>
+  <action input="user.forgotPassword" name="forgotPasswordForm"
+   parameter="reqCode" path="/forgotPassword" scope="session"
+   type="com.oyou.web.blog.security.ForgotPasswordAction" validate="true">
+   <forward name="success" path="user.forgotPassword"/>
+   <forward name="failed" path="user.forgotPassword"/>
+  </action>
+  <action input="user.profile" name="profileForm" parameter="reqCode"
+   path="/profile" scope="session"
+   type="com.oyou.web.blog.security.ProfileAction" validate="true">
+   <forward name="success" path="user.profile"/>
+   <forward name="failed" path="user.profile"/>
+   <forward name="group" path="/group.do" redirect="true"/>
+   <forward name="blogSearch" path="/blogSearch.do" redirect="true"/>
+  </action>
+  <action input="user.login" name="logoutForm" parameter="reqCode"
+   path="/logout" scope="request"
+   type="com.oyou.web.blog.security.LogoutAction" validate="false">
+   <forward name="success" path="user.login"/>
+   <forward name="failed" path="user.login"/>
+  </action>
+  <action input="/tiles/blog/group.jsp" name="groupForm" parameter="reqCode"
+   path="/group" roles="Admin,Leader,User,Guest" scope="session"
+   type="com.oyou.web.blog.GroupAction" validate="true">
+   <forward name="success" path="/tiles/blog/group.jsp"/>
+   <forward name="failed" path="/tiles/blog/group.jsp"/>
+  </action>
+  <action input="/tiles/blog/message.jsp" name="messageForm"
+   parameter="reqCode" path="/message" roles="Admin,Leader,User"
+   scope="session" type="com.oyou.web.blog.MessageAction" validate="false">
+   <forward name="success" path="/tiles/blog/message.jsp"/>
+   <forward name="failed" path="/tiles/blog/message.jsp"/>
+  </action>
+  <action input="/tiles/blog/replyMessage.jsp" name="replyMessageForm"
+   parameter="reqCode" path="/replyMessage" roles="Admin,Leader,User"
+   scope="session" type="com.oyou.web.blog.ReplyMessageAction" validate="false">
+   <forward name="success" path="/tiles/blog/replyMessage.jsp"/>
+   <forward name="failed" path="/tiles/blog/replyMessage.jsp"/>
+  </action>
+  <action input="/tiles/blog/viewReplyMessage.jsp" name="viewReplyMessageForm"
+   parameter="reqCode" path="/viewReplyMessage" roles="Admin,Leader,User"
+   scope="session" type="com.oyou.web.blog.ViewReplyMessageAction" validate="false">
+   <forward name="success" path="/tiles/blog/viewReplyMessage.jsp"/>
+   <forward name="failed" path="/tiles/blog/viewReplyMessage.jsp"/>
+  </action>
+  <action parameter="reqCode" path="/image" scope="request"
+   type="com.oyou.web.blog.ImageAction" validate="false"/>
+  <action parameter="reqCode" path="/icon" scope="request"
+   type="com.oyou.web.blog.IconAction" validate="false"/>
+  <action parameter="reqCode" path="/link" scope="request"
+   type="com.oyou.web.blog.LinkAction" validate="false"/>
+  <action path="/citySuggests" type="com.oyou.web.blog.security.CitySuggestAction"/>
+  <action path="/provinceSuggests" type="com.oyou.web.blog.security.ProvinceSuggestAction"/>
+  <action path="/countrySuggests" type="com.oyou.web.blog.security.CountrySuggestAction"/>
+  <action input="/tiles/console/sqlCommander.jsp" name="sqlCommanderForm"
+   parameter="reqCode" path="/sqlCommander" roles="Admin"
+   scope="session"
+   type="com.oyou.web.blog.console.SQLCommanderAction" validate="false">
+   <forward name="success" path="/tiles/console/sqlCommander.jsp"/>
+   <forward name="failed" path="/tiles/console/sqlCommander.jsp"/>
+  </action>
+  <action input="/tiles/console/hqlQuery.jsp" name="hqlForm"
+   parameter="reqCode" path="/hqlQuery" roles="Admin"
+   scope="session"
+   type="com.oyou.web.blog.console.HQLAction" validate="false">
+   <forward name="success" path="/tiles/console/hqlQuery.jsp"/>
+   <forward name="failed" path="/tiles/console/hqlQuery.jsp"/>
+  </action>
+  <action input="/tiles/console/userAdmin.jsp" name="userAdminForm"
+   parameter="reqCode" path="/userAdmin" roles="Admin" scope="session"
+   type="com.oyou.web.blog.console.UserAdminAction" validate="false">
+   <forward name="success" path="/tiles/console/userAdmin.jsp"/>
+   <forward name="failed" path="/tiles/console/sqlCommander.jsp"/>
+  </action>
+  <action input="/tiles/console/sqlCommander.jsp" name="sqlCommanderForm"
+   parameter="reqCode" path="/uploadAdmin" roles="Admin" scope="session"
+   type="com.oyou.web.blog.console.UploadAdminAction" validate="false">
+   <forward name="success" path="/tiles/console/sqlCommander.jsp"/>
+   <forward name="failed" path="/tiles/console/sqlCommander.jsp"/>
+  </action>
+  <action input="/tiles/console/sqlCommander.jsp" name="sqlCommanderForm"
+   parameter="reqCode" path="/dataBackup" roles="Admin" scope="session"
+   type="com.oyou.web.blog.console.DataBackupAction" validate="false">
+   <forward name="success" path="/tiles/console/sqlCommander.jsp"/>
+   <forward name="failed" path="/tiles/console/sqlCommander.jsp"/>
+  </action>
+  <action input="/tiles/console/email.jsp" name="emailForm"
+   parameter="reqCode" path="/email" roles="Admin" scope="session"
+   type="com.oyou.web.blog.console.EmailAction" validate="false">
+   <forward name="success" path="/tiles/console/email.jsp"/>
+   <forward name="failed" path="/tiles/console/email.jsp"/>
+  </action>
+  <action input="/tiles/blog/search.jsp" name="messageSearchForm"
+   parameter="reqCode" path="/blogSearch" roles="Admin,Leader,User"
+   scope="session" type="com.oyou.web.blog.MessageSearchAction" validate="false">
+   <forward name="success" path="/tiles/blog/search.jsp"/>
+   <forward name="failed" path="/tiles/blog/search.jsp"/>
+  </action>
+  <action input="/tiles/blog/replySearch.jsp" name="replyMessageSearchForm"
+   parameter="reqCode" path="/blogReplySearch" roles="Admin,Leader,User"
+   scope="session" type="com.oyou.web.blog.ReplyMessageSearchAction" validate="false">
+   <forward name="success" path="/tiles/blog/replySearch.jsp"/>
+   <forward name="failed" path="/tiles/blog/replySearch.jsp"/>
+  </action>
+  <action input="/tiles/blog/emailGroup.jsp" name="emailGroupForm"
+   parameter="reqCode" path="/emailGroup" roles="Admin,Leader,User" scope="session"
+   type="com.oyou.web.blog.EmailGroupAction" validate="false">
+   <forward name="success" path="/tiles/blog/emailGroup.jsp"/>
+   <forward name="failed" path="/tiles/blog/emailGroup.jsp"/>
+  </action>
+  <action input="/tiles/console/infoAdmin.jsp" name="informationForm"
+   parameter="reqCode" path="/infoAdmin" roles="Admin"
+   scope="session"
+   type="com.oyou.web.blog.console.InformationAction" validate="false">
+   <forward name="success" path="/tiles/console/infoAdmin.jsp"/>
+   <forward name="failed" path="/tiles/console/infoAdmin.jsp"/>
+  </action>
+ </action-mappings>
+ <controller>
+  <set-property property="processorClass" value="com.oyou.web.blog.struts.StrutsRequestProcessor"/>
+ </controller>
+ <!-- Message Resources -->
+ <message-resources parameter="Resources.ApplicationResources"/>
+ <!-- Tiles Plugin -->
+ <plug-in className="org.apache.struts.tiles.TilesPlugin">
+  <set-property property="definitions-parser-validate" value="false"/>
+  <set-property property="definitions-config" value="/WEB-INF/tiles-config.xml"/>
+  <set-property property="moduleAware" value="true"/>
+  <set-property property="definitions-parser-details" value="0"/>
+  <set-property property="definitions-debug" value="0"/>
+ </plug-in>
+ <!-- validator plugin -->
+ <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+  <set-property property="pathnames" value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+ </plug-in>
+ <!-- Spring Plugin -->
+ <plug-in className="org.springframework.web.struts.ContextLoaderPlugIn">
+  <set-property property="contextConfigLocation" value="classpath:spring/**/*.xml"/>
+ </plug-in>
+</struts-config>

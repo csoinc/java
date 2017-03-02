@@ -18,7 +18,7 @@ public class UserDAOImpl extends CommonDAOImpl implements UserDAO {
 		StringBuffer sb = new StringBuffer();
 		sb.append("select bu from BlogUser as bu");
 		sb.append(" where bu.phoneHome = :phoneHome");
-		sb.append(" or bu.email = :email");
+		sb.append(" and bu.email = :email");
 		Query query = getSession().createQuery(sb.toString());
 		query.setString("phoneHome", phoneHome);
 		query.setString("email", email);

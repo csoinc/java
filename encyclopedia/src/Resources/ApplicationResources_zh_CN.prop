@@ -1,0 +1,233 @@
+errors.header=The following error(s) occurred:
+errors.permission.denied=You don't have the required permission to do this operation.
+errors.required={0} is required.
+errors.minlength={0} cannot be less than {1} characters.
+errors.maxlength={0} cannot be greater than {1} characters.
+errors.invalid={0} is invalid.
+errors.byte={0} must be a byte.
+errors.short={0} must be a short.
+errors.integer={0} must be an integer.
+errors.long={0} must be a long.
+errors.float={0} must be a float.
+errors.double={0} must be a double.
+errors.date={0} is not a date.
+errors.date.invalid={0} entered in is an invalid format. The correct format is yyyy/mm/dd.
+errors.range={0} is not in the range {1} through {2}.
+errors.creditcard={0} is not a valid credit card number.
+errors.email={0} is an invalid e-mail address.
+
+menu.home=主页 Main
+menu.home.oyou=百科全书
+menu.english=English
+menu.chinese=国语
+menu.cantonese=粤语
+
+menu.user=帐户
+menu.logout=退出
+menu.login=登录
+menu.register=注册
+menu.password=更新密码
+menu.password.forgot=忘记密码
+menu.profile=个人资料
+
+menu.console=管理
+menu.data.backup=数据备份
+menu.upload.admin=上传管理
+menu.user.admin=用户列表
+menu.console.email=电邮
+menu.sqlCommander=SQL命令
+menu.hqlQuery=HQL命令
+menu.sqlCommander.buffer=SQL缓存
+menu.hqlQuery.buffer=HQL缓存
+menu.log.buffer=Log
+
+menu.category=类别
+
+menu.tab.1=Business
+menu.tab.2=Community
+menu.tab.3=Life
+menu.tab.4=Hybris
+menu.tab.5=Java
+menu.tab.6=Programming
+menu.tab.7=Systems
+menu.tab.8=Technology
+
+menu.cell=Cell Group
+menu.church=Church
+menu.fellowship=Fellowship
+menu.generic=普通
+menu.worship=Worship
+
+menu.function=工具
+menu.language=语言
+menu.search=信息搜索
+menu.user.email=电邮
+menu.blogger.album=博客相册
+menu.blogger.article=博客文集
+menu.blogger.video=博客视频
+
+menu.file=文档
+menu.group=团体
+menu.announcement=布告
+menu.aboutus=AboutUS
+menu.help=Help
+
+head.application.title=百科全书
+head.user.management.title=用户管理
+head.blog.listing.title=博客
+head.console.admin.title=管理
+
+foot.application.title=由 <a href="#" class="barmenu">CSOINC</a> 提供
+
+layout.pager.previous=<<
+layout.pager.next=>>
+
+form.login.title=登录
+form.login.title.edit=用户登录
+form.register.title=注册
+form.register.title.edit=用户注册
+form.password.title=密码
+form.password.title.edit=更改密码
+form.password.forgot.title=密码
+form.password.forgot.title.edit=忘记密码
+form.profile.title=用户资料
+form.profile.title.edit=更改用户资料
+form.group.title.edit=组名
+form.message.title.edit=相片|文档|写作|链结
+form.message.reply.title.edit=回复：相片|文档|写作|链结
+form.sqlcommander.title.edit=SQL命令
+form.email.title.edit=电邮
+form.hqlquery.title.edit=HQL Query
+form.information.title.edit=Information
+
+field.login.name=注册名：
+field.login.password=密码：
+field.password.new=新密码：
+field.password.confirm=确认密码：
+field.register.email.address=电子信箱：
+field.register.firstname=名字：
+field.register.lastname=姓：
+field.register.nickname=显示名：
+field.register.phone.home=宅电：
+field.register.phone.cell=手机：
+field.register.unit=街号#：
+field.register.street=街道：
+field.register.city=市镇：
+field.register.province=省：
+field.register.country=国家：
+
+field.group.name=组名：
+field.group.description=介绍：
+
+field.message.title=标题：
+field.message.summary=概要：
+field.message.content=内容|注释：
+field.message.upload=上传文件： 
+field.message.link=链接网址：
+field.input.word=输入词： 
+field.email.subject=标题：
+field.information.announcement=Announcement: 
+field.information.aboutus=AboutUS 
+field.information.help=Help 
+
+label.group.update=更改
+label.group.enter=进入
+label.message.update=更改： 
+label.message.reply=回复： 
+
+label.language.english=English
+label.language.mandarin=国语
+label.language.cantonese=粤语
+label.language.chinese.cn=简体字
+label.language.chinese.tw=繁体字
+label.update.option=更新选项：
+label.list.option=显示选项：
+label.language.option=语言选项：
+label.group.type.option=组类选项：
+label.message=信息
+label.all=全部
+label.viewed=观看
+label.updated=更新
+label.times=次
+label.email.to=发给：
+label.status.option=Status Option
+label.published=Published
+label.private=Private
+
+hint.register.phone.home=***-***-****
+
+button.login=登录
+button.register=注册
+button.password=更改密码
+button.profile=更改用户资料
+button.remove=删除
+button.add=Add
+button.open=打开
+button.close=关闭
+button.create=创建
+button.update=更改
+button.reply=回复
+button.enter=进入
+button.search=搜索
+button.lock=关锁
+button.unlock=解锁
+button.execute=运行
+button.send=发送
+button.executeSQL=Execute SQL
+button.executeHQL=Execute HQL
+
+button.more=更多
+button.download=下载
+button.back=返回
+button.comment=评论
+button.detail=详情
+
+popup.message=Message
+popup.question=Do you really want to quit?
+popup.yes=Yes
+popup.no=No
+
+error.login.fields.required=You must provide both a login name or email address and a password.
+error.login.valid.info.required=A valid user name and password combination is required.
+error.password.new.valid=A valid new password is required.
+error.password.confirm.valid=A valid confirmed password is required.
+error.password.newconfirm.mismatch=The new and confirmed password are mismatched.
+error.password.profile.invalid={0} is a invalid user profile identity.
+
+error.register.login.name=The login name {0} is already taken, please try another login name.
+error.register.email.address=The email address {0} is already taken, please try another email address.
+error.register.login.name.required=You must provide a login name.
+error.register.email.address.required=You must provide a email address.
+error.register.home.phone=You must provide a home phone number.
+error.group.authority=You don't have authority to update this group, please contact group master.
+error.message.authority=You don't have authority to update this message, please contact message owner.
+error.message.phone.and.email.invalid=Your home phone number and the email address is not exist in our system.
+error.function.authority=You don't have authority to enter this function, please contact system administrator.
+
+error.system=Unknow system error, please contact system administrator.
+
+message.password.changed=Your password changed successfully.
+message.login.confirmed=You login to the system successfully.
+message.login.viewed={0}({1}).
+message.login.required=You have to login to the system first, or Account -> Register to create an account.
+message.register.created=Your account profile created successfully, <br>your password has been sent to your email address. 
+message.profile.updated=Your account profile updated successfully.
+message.logout.confirmed=You logout from the system successfully.
+message.user.updated={0} account profile updated successfully.
+
+message.group.created=Your group profile created successfully.
+message.message.created=Your message created successfully.
+message.message.reply.created=Your comment message created successfully.
+
+message.sqlcommander.return=Execute script return: {0}.
+message.sqlcommander.empty=Execute script is empty.
+message.email.return=Your email has been sent successfully.
+message.email.empty=Your email is empty.
+message.backup.confirmed={0} table backup was made successfully.
+message.upload.maintain.confirmed=Upload files was maintained successfully.
+message.upload.deleted.confirmed={0} uploading file was deleted successfully.
+message.upload.created.confirmed={0} uploading file was uploaded successfully.
+
+message.forgot.password.email.confirmed=Your login name and password has been sent to your email address {0}. 
+message.information.updated=Your information updated successfully.
+

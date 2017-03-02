@@ -16,33 +16,33 @@ public class BlogUserServiceImpl extends UserServiceImpl implements BlogUserServ
 		String subject;
 		StringBuffer contentSb = new StringBuffer();
 		if (USER_REGISTER.equals(emailType)) {
-			subject = "Register - http://together.blogsite.org";
+			subject = "Register - Together";
 			contentSb.append("Hi " + toFirstname + ",\n\n");
-			contentSb.append("Thank you for using http://together.blogsite.org,\n\n");
+			contentSb.append("Thank you for using Together,\n\n");
 			contentSb.append("your login name: " + toEmail + "\n\n");
 			contentSb.append("your password: " + toPassword + "\n\n");
 			contentSb.append("======================================================================\n");
 			contentSb.append("Welcome to visit us again.\n\n");
-			contentSb.append("http://together.blogsite.org.\n\n");
+			contentSb.append("Together.\n\n");
 			this.emailManager.emailSimpleMailMessage(toEmail, fromEmail, subject, contentSb.toString());
 		} else if (USER_LOGIN.equals(emailType)) {
-			subject = "Login - http://together.blogsite.org";
+			subject = "Login - Together";
 			contentSb.append("Hi " + this.getAdminName() + ",\n\n");
-			contentSb.append("This email address: " + toEmail + " login to http://together.blogsite.org\n\n");
+			contentSb.append("This email address: " + toEmail + " login to Together\n\n");
 			contentSb.append("The firstname: " + toFirstname + "\n\n");
 			contentSb.append("Login from: " + remoteAddr + "\n\n");
 			contentSb.append("======================================================================\n");
-			contentSb.append("http://together.blogsite.org.\n\n");
+			contentSb.append("Together.\n\n");
 			this.emailManager.emailSimpleMailMessage(this.getAdminEmail(), fromEmail, subject, contentSb.toString());
 		} else if (USER_PASSWORD.equals(emailType)) {
-			subject = "Password - http://together.blogsite.org";
+			subject = "Password - Together";
 			contentSb.append("Hi " + toFirstname + ",\n\n");
-			contentSb.append("Thank you for using http://together.blogsite.org,\n\n");
+			contentSb.append("Thank you for using Together,\n\n");
 			contentSb.append("your login name: " + toEmail + "\n\n");
 			contentSb.append("your password: " + toPassword + "\n\n");
 			contentSb.append("======================================================================\n");
 			contentSb.append("Welcome to visit us again.\n\n");
-			contentSb.append("http://together.blogsite.org.\n\n");
+			contentSb.append("Together.\n\n");
 			this.emailManager.emailSimpleMailMessage(toEmail, fromEmail, subject, contentSb.toString());
 		}
 

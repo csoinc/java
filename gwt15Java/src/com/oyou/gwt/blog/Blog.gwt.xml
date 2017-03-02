@@ -1,5 +1,0 @@
-<module>
-	<inherits name='com.google.gwt.user.User'/>
-	<entry-point class='com.oyou.gwt.blog.client.Blog'/>
-	<stylesheet src='Blog.css'/>
-</module>

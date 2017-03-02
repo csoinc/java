@@ -100,7 +100,7 @@ abstract class UserServiceImpl extends SpringServiceImpl implements UserService 
 			user.setAccessTime(DateHelper.getCurrentTimestamp());
 			userDAO.saveOrUpdate(user);
 			this.increaseUserViewTimes(user.getId());
-			this.sendSimpleMailMessage(user.getEmail(), user.getFirstname(), user.getLoginPassword(), this.getFromEmail(), remoteAddr, USER_LOGIN);
+			//this.sendSimpleMailMessage(user.getEmail(), user.getFirstname(), user.getLoginPassword(), this.getFromEmail(), remoteAddr, USER_LOGIN);
 		}
 		return user;
 	}

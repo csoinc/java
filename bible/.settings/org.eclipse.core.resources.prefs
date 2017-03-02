@@ -1,7 +1,5 @@
+#Tue Oct 18 19:39:32 EDT 2011
 eclipse.preferences.version=1
-encoding//WebContent/bible/index/books-CN.txt=GB2312
-encoding//WebContent/bible/text/hb5.txt=BIG5
-encoding//WebContent/bible/text/hgb.txt=GB2312
 encoding//WebContent/jsps/bible/version.jsp=UTF-8
 encoding//WebContent/template/left.jsp=UTF-8
 encoding//WebContent/template/right.jsp=UTF-8

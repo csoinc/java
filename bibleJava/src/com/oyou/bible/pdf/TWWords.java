@@ -2,7 +2,7 @@ package com.oyou.bible.pdf;
 
 public interface TWWords {
 	String LICENSED_TO = "授權給";
-	String OWEN_OU = "歐陽群新";
+	String OWEN_OUYANG = "歐陽群新";
 	String MCBC = "麥浸國語堂";
 	String CHAPTER = "章";
 	String SECTION = "節";
@@ -10,5 +10,7 @@ public interface TWWords {
 	String TESTAMENT_NEW = "新約"; 
 	String TESTAMENT_OLD = "舊約"; 
 	String BOOK = "書";
-	String TESTAMENT = "約"; 
+	String TESTAMENT = "約";
+	String COPYRIGHT = "漢語聖經協會";
+	String VERSION = "和合本";	
 }
